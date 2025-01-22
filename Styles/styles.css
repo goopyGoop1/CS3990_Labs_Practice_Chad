@@ -1,0 +1,103 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif; /* Different fonts for other pages */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header h1 {
+    text-align: center;
+}
+
+main {
+    text-align: justify;
+}
+
+/* Paragraph Styles */
+p {
+    line-height: 30px;
+    text-align: justify;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.special-paragraph {
+    line-height: 30px;
+    border: none;
+    font-size: 18px;
+    color: blue;
+}
+
+/* Images */
+img {
+    border: 3px solid red; /* Change colors for different images */
+    margin: 10px;
+}
+
+.profile-img {
+    float: left;
+    margin-right: 15px;
+    width: 150px;
+}
+
+/* Lists and Buttons */
+ul {
+    list-style-type: lower-alpha; /* Lowercase letters for lists */
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: lightgray;
+    color: black;
+    font-weight: bold;
+}
+
+/* Headers */
+h2 {
+    font-style: italic;
+}
+
+h3 {
+    background-color: lightblue;
+    font-weight: normal; /* Non-fat for the third page */
+}
+
+/* Background Image */
+body {
+    background-image: url('Images/background.jpg');
+    background-size: cover;
+}
+
+/* Link Styles */
+a {
+    font-family: Tahoma, sans-serif; /* Font for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Selectors Example */
+p, img, a {
+    margin: 10px; /* Grouping selectors */
+}
+
+.special {
+    color: red; /* Class selector */
+}
+
+#highlight {
+    background-color: yellow; /* ID selector */
+}
