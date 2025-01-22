@@ -101,3 +101,26 @@ p, img, a {
 #highlight {
     background-color: yellow; /* ID selector */
 }
+
+/* Custom styling for ordered list */
+.custom-ordered-list {
+    list-style-type: decimal; /* Default numbering */
+    margin-left: 20px; /* Adds some space to the left */
+    font-family: Arial, sans-serif; /* Sets the font family */
+    font-size: 16px; /* Adjusts font size */
+    line-height: 1.8; /* Adds spacing between list items */
+    color: #333; /* Sets the text color */
+}
+
+/* Add a specific style for the numbers */
+.custom-ordered-list li {
+    margin-bottom: 10px; /* Adds space between list items */
+    color: #007BFF; /* Makes the text blue */
+}
+
+/* Style the numbers with a pseudo-element */
+.custom-ordered-list li::marker {
+    color: #FF5733; /* Changes the color of the numbers */
+    font-weight: bold; /* Makes the numbers bold */
+    font-size: 18px; /* Adjusts the size of the numbers */
+}
