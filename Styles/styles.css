@@ -15,14 +15,15 @@ main {
 }
 
 /* General styling for all paragraphs */
-p {
+.paragraph-one {
     font-size: 16px; /* Default font size */
     line-height: 30px; /* Set line spacing to 30px */
     margin-bottom: 20px; /* Add spacing below each paragraph */
+    text-align: center;
 }
 
 /* Specific styling for the first paragraph */
-p:first-of-type {
+.paragraph-two  {
     font-size: 20px; /* Larger font size for the first paragraph */
     font-family: 'Arial', sans-serif; /* Font type for the first paragraph */
     color: #333; /* Dark gray text */
@@ -31,7 +32,7 @@ p:first-of-type {
 }
 
 /* Specific styling for the second paragraph */
-p:nth-of-type(2) {
+.paragraph-three {
     font-size: 18px; /* Slightly larger font size */
     font-family: 'Georgia', serif; /* Different font for the second paragraph */
     color: #007bff; /* Blue text */
@@ -39,7 +40,7 @@ p:nth-of-type(2) {
 }
 
 /* Styling for all other paragraphs */
-p:nth-of-type(n+3) {
+.paragraph-four {
     font-size: 16px; /* Default font size for other paragraphs */
     font-family: 'Verdana', sans-serif; /* Different font type */
     color: #555; /* Medium gray text */
@@ -85,6 +86,7 @@ h2 {
 h3 {
     background-color: lightblue;
     font-weight: normal; /* Non-fat for the third page */
+    text-align: center;
 }
 
 /* Background Image */
