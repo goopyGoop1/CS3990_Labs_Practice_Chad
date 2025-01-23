@@ -14,21 +14,36 @@ main {
     text-align: justify;
 }
 
-/* Paragraph Styles */
+/* General styling for all paragraphs */
 p {
-    line-height: 30px;
-    text-align: justify;
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-size: 16px; /* Default font size */
+    line-height: 30px; /* Set line spacing to 30px */
+    margin-bottom: 20px; /* Add spacing below each paragraph */
 }
 
-.special-paragraph {
-    line-height: 30px;
-    border: none;
-    font-size: 18px;
-    color: blue;
+/* Specific styling for the first paragraph */
+p:first-of-type {
+    font-size: 20px; /* Larger font size for the first paragraph */
+    font-family: 'Arial', sans-serif; /* Font type for the first paragraph */
+    color: #333; /* Dark gray text */
+    border-bottom: 2px solid red; /* Add a red line at the bottom */
+    padding-bottom: 5px; /* Add spacing for the red line */
 }
 
+/* Specific styling for the second paragraph */
+p:nth-of-type(2) {
+    font-size: 18px; /* Slightly larger font size */
+    font-family: 'Georgia', serif; /* Different font for the second paragraph */
+    color: #007bff; /* Blue text */
+    border-bottom: none; /* Remove the red line for the second paragraph */
+}
+
+/* Styling for all other paragraphs */
+p:nth-of-type(n+3) {
+    font-size: 16px; /* Default font size for other paragraphs */
+    font-family: 'Verdana', sans-serif; /* Different font type */
+    color: #555; /* Medium gray text */
+}
 /* Images */
 img {
     border: 3px solid red; /* Change colors for different images */
