@@ -143,16 +143,13 @@ p, img, a {
 }
 
 .contact-info {
-    list-style-type: disc; /* Use traditional bullet points */
-    padding-left: 20px; /* Indent the list for proper alignment */
-    font-family: Arial, sans-serif; /* Set the font to Arial */
-    font-size: 16px; /* Set font size */
-    line-height: 1.8; /* Add spacing between lines */
-    color: #333; /* Set text color to dark gray */
+    list-style-type: disc; /* Use bullet points */
+    padding-left: 20px; /* Add spacing to align bullets */
+    margin: 0; /* Reset margin */
 }
 
 .contact-info li {
-    margin-bottom: 10px; /* Add spacing between list items */
+    margin-bottom: 10px; /* Add space between list items */
 }
 
 
