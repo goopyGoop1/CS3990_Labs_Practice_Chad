@@ -46,11 +46,25 @@ main {
     color: #555; /* Medium gray text */
 }
 /* Images */
-img {
+.img-one {
     border: 3px solid red; /* Change colors for different images */
     margin: 10px;
 }
 
+.img-two {
+    border: 3px solid greenyellow; /* Change colors for different images */
+    margin: 10px;
+}
+
+.img-three {
+    border: 3px solid black; /* Change colors for different images */
+    margin: 10px;
+}
+
+.img-four {
+    border: 3px solid aqua; /* Change colors for different images */
+    margin: 10px;
+}
 .profile-img {
     float: left;
     margin-right: 15px;
