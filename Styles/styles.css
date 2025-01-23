@@ -142,6 +142,20 @@ p, img, a {
     font-size: 18px; /* Adjusts the size of the numbers */
 }
 
+.contact-info {
+    list-style-type: disc; /* Use traditional bullet points */
+    padding-left: 20px; /* Indent the list for proper alignment */
+    font-family: Arial, sans-serif; /* Set the font to Arial */
+    font-size: 16px; /* Set font size */
+    line-height: 1.8; /* Add spacing between lines */
+    color: #333; /* Set text color to dark gray */
+}
+
+.contact-info li {
+    margin-bottom: 10px; /* Add spacing between list items */
+}
+
+
 /* Buttons for navigation */
 .button-list {
     text-align: center; /* Center align the button list */
