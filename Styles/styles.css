@@ -124,3 +124,32 @@ p, img, a {
     font-weight: bold; /* Makes the numbers bold */
     font-size: 18px; /* Adjusts the size of the numbers */
 }
+
+/* Buttons for navigation */
+.button-list {
+    text-align: center; /* Center align the button list */
+    margin: 20px 0; /* Add spacing above and below the buttons */
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+}
+
+.button-list li {
+    display: inline; /* Display buttons inline */
+    margin: 0 10px; /* Add spacing between buttons */
+}
+
+.button-list a {
+    display: inline-block; /* Make the button block-level for padding */
+    padding: 10px 20px; /* Adjust button size */
+    font-size: 16px; /* Make the text readable */
+    font-weight: bold; /* Bold text */
+    color: #fff; /* White text color */
+    background-color: #007bff; /* Blue background color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.button-list a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
