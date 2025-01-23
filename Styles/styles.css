@@ -181,3 +181,18 @@ p, img, a {
 .button-list a:hover {
     background-color: #0056b3; /* Darker blue on hover */
 }
+
+
+
+/* General styles for images floated to the right */
+.float-right {
+    float: right; /* Float the element to the right */
+    margin-left: 15px; /* Add spacing to the left */
+    margin-top: 10px; /* Add spacing above */
+}
+
+/* Specific styles for the Rotman School of Management image */
+.rotman-logo {
+    border: 3px solid blue; /* Add a blue border */
+    width: 200px; /* Set the width */
+}
