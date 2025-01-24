@@ -52,6 +52,7 @@ main {
 }
 
 .img-one-p2 {
+    border: 3px solid red; /* Change colors for different images */
     position: center;
     height: 200px;
     width: 200px;
