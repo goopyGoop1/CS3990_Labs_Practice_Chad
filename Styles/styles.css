@@ -1,111 +1,110 @@
 /* General Styling */
 body {
-    font-family: Arial, sans-serif; /* general font family */
+    font-family: Arial, sans-serif; /* Different fonts for other pages */
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 header h1 {
-    text-align: center; /* center align main header */
+    text-align: center;
 }
 
 main {
-    text-align: justify; /* justify text in main */
+    text-align: justify;
 }
 
-/* paragraph styles */
+/* General styling for all paragraphs */
 .paragraph-one {
-    font-size: 16px; /* default font size */
-    line-height: 30px; /* set line spacing */
-    margin-bottom: 20px; /* spacing below each paragraph */
-    text-align: center; /* center text */
+    font-size: 16px; /* Default font size */
+    line-height: 30px; /* Set line spacing to 30px */
+    margin-bottom: 20px; /* Add spacing below each paragraph */
+    text-align: center;
 }
 
-.paragraph-two {
-    font-size: 20px; /* larger font size */
-    font-family: 'arial', sans-serif; /* set font */
-    color: #333; /* dark gray text */
-    border-bottom: 2px solid red; /* red bottom border */
-    padding-bottom: 5px; /* spacing for the red line */
+/* Specific styling for the first paragraph */
+.paragraph-two  {
+    font-size: 20px; /* Larger font size for the first paragraph */
+    font-family: 'Arial', sans-serif; /* Font type for the first paragraph */
+    color: #333; /* Dark gray text */
+    border-bottom: 2px solid red; /* Add a red line at the bottom */
+    padding-bottom: 5px; /* Add spacing for the red line */
 }
 
+/* Specific styling for the second paragraph */
 .paragraph-three {
-    font-size: 18px; /* slightly larger font */
-    font-family: 'georgia', serif; /* serif font */
-    color: #007bff; /* blue text */
-    border-bottom: none; /* no border */
+    font-size: 18px; /* Slightly larger font size */
+    font-family: 'Georgia', serif; /* Different font for the second paragraph */
+    color: #007bff; /* Blue text */
+    border-bottom: none; /* Remove the red line for the second paragraph */
 }
 
+/* Styling for all other paragraphs */
 .paragraph-four {
-    font-size: 16px; /* default size */
-    font-family: 'verdana', sans-serif; /* different font */
-    color: #555; /* medium gray */
+    font-size: 16px; /* Default font size for other paragraphs */
+    font-family: 'Verdana', sans-serif; /* Different font type */
+    color: #555; /* Medium gray text */
 }
-
-/* image styles */
+/* Images */
 .img-one {
-    border: 3px solid red; /* red border */
-    margin: 10px; /* spacing around */
+    border: 3px solid red; /* Change colors for different images */
+    margin: 10px;
 }
 
 .img-one-p2 {
-    border: 3px solid red;
+    border: 3px solid red; /* Change colors for different images */
     margin: 10px;
-    height: 200px; /* set height */
-    width: 200px; /* set width */
+    height: 200px;
+    width: 200px;
 }
 
 .img-two {
-    border: 3px solid greenyellow;
+    border: 3px solid greenyellow; /* Change colors for different images */
     margin: 10px;
 }
-
 .img-two-p3 {
-    border: 3px solid greenyellow;
+    border: 3px solid greenyellow; /* Change colors for different images */
     margin: 10px;
     width: 150px;
     height: 150px;
 }
-
 .img-three {
-    border: 3px solid black;
+    border: 3px solid black; /* Change colors for different images */
     margin: 10px;
 }
 
 .img-four {
-    border: 3px solid aqua;
+    border: 3px solid aqua; /* Change colors for different images */
     margin: 10px;
 }
-
 .profile-img {
     float: left;
     margin-right: 15px;
     width: 150px;
 }
 
-/* lists and buttons */
+/* Lists and Buttons */
 ul {
-    list-style-type: lower-alpha; /* lower alpha style */
+    list-style-type: lower-alpha; /* Lowercase letters for lists */
     padding: 0;
 }
 
 ul li {
-    display: inline; /* inline list items */
-    margin-right: 15px; /* spacing between items */
+    display: inline;
+    margin-right: 15px;
 }
 
 .btn {
-    display: inline-block; /* inline-block button */
+    display: inline-block;
     padding: 10px 20px;
-    text-decoration: none; /* remove underline */
-    border-radius: 5px; /* rounded corners */
+    text-decoration: none;
+    border-radius: 5px;
     background-color: lightgray;
     color: black;
     font-weight: bold;
 }
 
-/* headers */
+/* Headers */
 h2 {
     font-style: italic;
 }
@@ -113,7 +112,7 @@ h2 {
 .h2-p2 {
     text-align: left;
     font-style: italic;
-    font-family: georgia;
+    font-family: Georgia;
 }
 
 .h2-two {
@@ -123,38 +122,40 @@ h2 {
 
 h3 {
     background-color: lightblue;
-    font-weight: normal;
+    font-weight: normal; /* Non-fat for the third page */
     text-align: center;
 }
 
 .h3-p2 {
     background-color: lightblue;
-    font-weight: normal;
+    font-weight: normal; /* Non-fat for the third page */
     text-align: center;
     font-family: monospace;
+
 }
 
 .h3-p3 {
     background-color: green;
-    font-weight: normal;
+    font-weight: normal; /* Non-fat for the third page */
     text-align: center;
-    font-family: 'lucida grande';
+    font-family: 'Lucida Grande';
+
 }
 
-/* background image */
+/* Background Image */
 .body-p3 {
-    background-image: url("../Images/golf_background.jpg"); /* adjust path */
-    background-size: cover; /* full cover */
-    background-repeat: no-repeat; /* no tiling */
-    background-attachment: fixed; /* fixed during scroll */
-    background-position: center; /* centered image */
+    background-image: url('../Images/golf_background.jpg'); /* Adjust path if needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     margin: 0;
-    min-height: 100vh;
+    min-height: 100vh; /* Ensure it covers the viewport */
 }
 
-/* link styles */
+/* Link Styles */
 a {
-    font-family: tahoma, sans-serif;
+    font-family: Tahoma, sans-serif; /* Font for links */
     text-decoration: none;
 }
 
@@ -163,109 +164,114 @@ a:hover {
     text-decoration: underline;
 }
 
-/* grouped selectors */
+/* Selectors Example */
 p, img, a {
-    margin: 10px; /* margin for grouped elements */
+    margin: 10px; /* Grouping selectors */
 }
 
 .special {
-    color: red; /* for special elements */
+    color: red; /* Class selector */
 }
 
 #highlight {
-    background-color: yellow; /* highlight id */
+    background-color: yellow; /* ID selector */
 }
 
-/* custom ordered list */
+/* Custom styling for ordered list */
 .custom-ordered-list {
-    list-style-type: decimal;
-    margin-left: 20px;
-    font-family: arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.8;
-    color: #333;
+    list-style-type: decimal; /* Default numbering */
+    margin-left: 20px; /* Adds some space to the left */
+    font-family: Arial, sans-serif; /* Sets the font family */
+    font-size: 16px; /* Adjusts font size */
+    line-height: 1.8; /* Adds spacing between list items */
+    color: #333; /* Sets the text color */
 }
 
+/* Add a specific style for the numbers */
 .custom-ordered-list li {
-    margin-bottom: 10px;
-    color: #007bff; /* blue list items */
+    margin-bottom: 10px; /* Adds space between list items */
+    color: #007BFF; /* Makes the text blue */
 }
 
+/* Style the numbers with a pseudo-element */
 .custom-ordered-list li::marker {
-    color: #ff5733; /* orange markers */
-    font-weight: bold;
-    font-size: 18px;
+    color: #FF5733; /* Changes the color of the numbers */
+    font-weight: bold; /* Makes the numbers bold */
+    font-size: 18px; /* Adjusts the size of the numbers */
 }
 
-/* contact info */
 .contact-info {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin: 0;
+    list-style-type: disc; /* Use bullet points */
+    padding-left: 20px; /* Add spacing to align bullets */
+    margin: 0; /* Reset margin */
 }
 
 .contact-info li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Add space between list items */
 }
 
-/* button list */
+
+/* Buttons for navigation */
 .button-list {
-    text-align: center;
-    margin: 20px 0;
-    list-style: none;
+    text-align: center; /* Center align the button list */
+    margin: 20px 0; /* Add spacing above and below the buttons */
+    list-style: none; /* Remove default list styling */
     padding: 0;
 }
 
 .button-list li {
-    display: inline;
-    margin: 0 10px;
+    display: inline; /* Display buttons inline */
+    margin: 0 10px; /* Add spacing between buttons */
 }
 
 .button-list a {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #007bff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    display: inline-block; /* Make the button block-level for padding */
+    padding: 10px 20px; /* Adjust button size */
+    font-size: 16px; /* Make the text readable */
+    font-weight: bold; /* Bold text */
+    color: #fff; /* White text color */
+    background-color: #007bff; /* Blue background color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 .button-list-italic {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    font-style: italic;
-    color: #fff;
-    background-color: #007bff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    display: inline-block; /* Make the button block-level for padding */
+    padding: 10px 20px; /* Adjust button size */
+    font-size: 16px; /* Make the text readable */
+    font-weight: bold; /* Bold text */
+    font-style: italic; /* Make text italic */
+    color: #fff; /* White text color */
+    background-color: #007bff; /* Blue background color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 .button-list a:hover {
-    background-color: #0056b3; /* darker on hover */
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
-/* floated elements */
+
+
+/* General styles for images floated to the right */
 .float-right {
-    float: right;
-    margin-left: 15px;
-    margin-top: 10px;
+    float: right; /* Float the element to the right */
+    margin-left: 15px; /* Add spacing to the left */
+    margin-top: 10px; /* Add spacing above */
 }
 
 .float-center {
-    float: inline-end;
-    margin-left: 15px;
-    margin-top: 10px;
+    float: inline-end; /* Float the element to the right */
+    margin-left: 15px; /* Add spacing to the left */
+    margin-top: 10px; /* Add spacing above */
 }
 
+/* Specific styles for the Rotman School of Management image */
 .rotman-logo {
-    border: 3px solid blue;
-    width: 200px;
+    border: 3px solid blue; /* Add a blue border */
+    width: 200px; /* Set the width */
 }
 
 .float-left {
@@ -276,19 +282,20 @@ p, img, a {
 }
 
 .clear-float {
-    clear: both;
-    display: block;
-    content: "";
+    clear: both; /* Clears floats on both sides */
+    display: block; /* Ensures it's treated as a block element */
+    content: ""; /* Used for clearfix method if needed */
 }
 
 .book-list {
-    list-style-type: disc;
-    margin-left: 20px;
-    font-family: arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.8;
+    list-style-type: disc; /* Default bullet style */
+    margin-left: 20px; /* Indent the list from the section */
+    font-family: Arial, sans-serif; /* Clean and modern font */
+    font-size: 16px; /* Readable font size */
+    line-height: 1.8; /* Space between list items */
 }
 
 .book-list li {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Adds space below each list item */
 }
+
