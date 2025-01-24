@@ -4,18 +4,16 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-image: url("/Images/golf_background.jpg"); /* adjust path */
-    background-size: cover; /* full cover */
-    background-repeat: no-repeat; /* no tiling */
-    background-attachment: fixed; /* fixed during scroll */
-    background-position: center; /* centered image */
-    margin: 0;
     
 }
 
 /* background image */
 .body-p3 {
-    background-image: url("../Images/golf_background.jpg"); 
+    font-family: Arial, sans-serif; /* general font family */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url("/Images/golf_background.jpg"); /* adjust path */
     background-size: cover; /* full cover */
     background-repeat: no-repeat; /* no tiling */
     background-attachment: fixed; /* fixed during scroll */
