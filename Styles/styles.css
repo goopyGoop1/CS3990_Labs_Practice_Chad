@@ -248,3 +248,10 @@ p, img, a {
     border: 3px solid blue; /* Add a blue border */
     width: 200px; /* Set the width */
 }
+
+.float-left {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+}
