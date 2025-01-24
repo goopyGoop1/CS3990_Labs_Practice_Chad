@@ -15,7 +15,7 @@ body {
 
 /* background image */
 .body-p3 {
-    background-image: url("/Images/golf_background.jpg"); /* adjust path */
+    background-image: url("../Images/golf_background.jpg"); 
     background-size: cover; /* full cover */
     background-repeat: no-repeat; /* no tiling */
     background-attachment: fixed; /* fixed during scroll */
