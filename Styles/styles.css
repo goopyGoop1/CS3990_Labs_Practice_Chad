@@ -50,7 +50,6 @@ main {
     border-bottom: 2px solid red; /* red bottom border */
     padding-bottom: 5px; /* spacing for the red line */
     letter-spacing: 30px;
-    line-height: 30px;
 }
 
 .paragraph-three {
