@@ -255,3 +255,9 @@ p, img, a {
     height: 150px;
     margin: 15px;
 }
+
+.clear-float {
+    clear: both; /* Clears floats on both sides */
+    display: block; /* Ensures it's treated as a block element */
+    content: ""; /* Used for clearfix method if needed */
+}
