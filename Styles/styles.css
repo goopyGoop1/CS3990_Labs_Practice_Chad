@@ -62,7 +62,12 @@ main {
     border: 3px solid greenyellow; /* Change colors for different images */
     margin: 10px;
 }
-
+.img-two-p3 {
+    border: 3px solid greenyellow; /* Change colors for different images */
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+}
 .img-three {
     border: 3px solid black; /* Change colors for different images */
     margin: 10px;
