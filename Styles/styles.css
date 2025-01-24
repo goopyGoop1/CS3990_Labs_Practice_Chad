@@ -49,6 +49,8 @@ main {
     color: #333; /* dark gray text */
     border-bottom: 2px solid red; /* red bottom border */
     padding-bottom: 5px; /* spacing for the red line */
+    letter-spacing: 30px;
+    line-height: 30px;
 }
 
 .paragraph-three {
@@ -190,7 +192,7 @@ p, img, a {
 
 /* custom ordered list */
 .custom-ordered-list {
-    list-style-type: decimal;
+    list-style-type: lower-alpha;
     margin-left: 20px;
     font-family: arial, sans-serif;
     font-size: 16px;
