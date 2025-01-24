@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-image: url("./Images/golf_background.jpg"); /* adjust path */
+    background-image: url("/Images/night_sky.jpg"); /* adjust path */
     background-size: cover; /* full cover */
     background-repeat: no-repeat; /* no tiling */
     background-attachment: fixed; /* fixed during scroll */
