@@ -53,7 +53,7 @@ main {
 
 .img-one-p2 {
     border: 3px solid red; /* Change colors for different images */
-    position: center;
+    margin: 10px;
     height: 200px;
     width: 200px;
 }
@@ -129,10 +129,23 @@ h3 {
 
 }
 
+.h3-p3 {
+    background-color: green;
+    font-weight: normal; /* Non-fat for the third page */
+    text-align: center;
+    font-family: 'Lucida Grande';
+
+}
+
 /* Background Image */
-body {
-    background-image: url('Images/background.jpg');
-    background-size: cover;
+.body-p3 {
+    background-image: url('Images/golf_background.jpg');  /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    background-attachment: fixed; /* Keeps the background static during scrolling */
+    background-position: center; /* Centers the background image */
+    margin: 0; /* Removes default margin for the body */
+    height: 100vh; /* Ensures full viewport height */
 }
 
 /* Link Styles */
@@ -258,8 +271,8 @@ p, img, a {
 
 .float-left {
     float: left;
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     margin: 15px;
 }
 
@@ -267,4 +280,16 @@ p, img, a {
     clear: both; /* Clears floats on both sides */
     display: block; /* Ensures it's treated as a block element */
     content: ""; /* Used for clearfix method if needed */
+}
+
+.book-list {
+    list-style-type: disc; /* Default bullet style */
+    margin-left: 20px; /* Indent the list from the section */
+    font-family: Arial, sans-serif; /* Clean and modern font */
+    font-size: 16px; /* Readable font size */
+    line-height: 1.8; /* Space between list items */
+}
+
+.book-list li {
+    margin-bottom: 15px; /* Adds space below each list item */
 }
