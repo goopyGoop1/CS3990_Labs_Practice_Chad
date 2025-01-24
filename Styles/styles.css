@@ -139,13 +139,13 @@ h3 {
 
 /* Background Image */
 .body-p3 {
-    background-image: url('Images/golf_background.jpg');  /* Path to your image */
-    background-size: cover; /* Ensures the image covers the entire page */
-    background-repeat: no-repeat; /* Prevents tiling of the image */
-    background-attachment: fixed; /* Keeps the background static during scrolling */
-    background-position: center; /* Centers the background image */
-    margin: 0; /* Removes default margin for the body */
-    height: 100vh; /* Ensures full viewport height */
+    background-image: url('../Images/golf_background.jpg'); /* Adjust path if needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    min-height: 100vh; /* Ensure it covers the viewport */
 }
 
 /* Link Styles */
