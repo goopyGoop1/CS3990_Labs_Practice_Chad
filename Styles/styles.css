@@ -51,6 +51,12 @@ main {
     margin: 10px;
 }
 
+.img-one-p2 {
+    border: 3px solid red; /* Change colors for different images */
+    margin: 10px;
+    height: max-content;
+}
+
 .img-two {
     border: 3px solid greenyellow; /* Change colors for different images */
     margin: 10px;
