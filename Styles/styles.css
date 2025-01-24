@@ -197,6 +197,19 @@ p, img, a {
     transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
+.button-list-italic a {
+    display: inline-block; /* Make the button block-level for padding */
+    padding: 10px 20px; /* Adjust button size */
+    font-size: 16px; /* Make the text readable */
+    font-weight: bold; /* Bold text */
+    font-style: italic; /* Make text italic */
+    color: #fff; /* White text color */
+    background-color: #007bff; /* Blue background color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
 .button-list a:hover {
     background-color: #0056b3; /* Darker blue on hover */
 }
