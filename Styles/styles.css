@@ -4,22 +4,28 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    
-}
-
-/* background image */
-.body-p3 {
-    font-family: Arial, sans-serif; /* general font family */
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
     background-image: url("/Images/night_sky.jpg"); /* adjust path */
     background-size: cover; /* full cover */
     background-repeat: no-repeat; /* no tiling */
     background-attachment: fixed; /* fixed during scroll */
     background-position: center; /* centered image */
     margin: 0;
+    
 }
+
+/* background image */
+/* .body-p3 {
+    font-family: Arial, sans-serif; /* general font family */
+    /* margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url("/Images/night_sky.jpg"); /* adjust path */
+    /* background-size: cover; /* full cover */
+    /* background-repeat: no-repeat; no tiling */
+    /* background-attachment: fixed; fixed during scroll */
+    /* background-position: center; centered image */
+    /* margin: 0; */ */
+/* } */ */ */
 
 header h1 {
     text-align: center; /* center align main header */
