@@ -108,6 +108,14 @@ h3 {
     text-align: center;
 }
 
+.h3-p2 {
+    background-color: lightblue;
+    font-weight: normal; /* Non-fat for the third page */
+    text-align: center;
+    font-family: monospace;
+
+}
+
 /* Background Image */
 body {
     background-image: url('Images/background.jpg');
