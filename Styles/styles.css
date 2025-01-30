@@ -11,7 +11,7 @@ body, html {
     height: 200px;
     padding: 10px;
     font-family: Verdana, Tahoma, sans-serif;
-    position: relative;
+    position: fixed;
 
 }
 
@@ -21,5 +21,5 @@ body, html {
     height: 100px;
     padding: 20px;
     font-family: Verdana, Tahoma, sans-serif;
-    position: relative;
+    position: fixed;
 }
