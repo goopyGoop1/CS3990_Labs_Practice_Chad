@@ -1,25 +1,101 @@
-body, html {
+body{
     background-color: white;
-    margin: 10px;
-    padding: 15px;
-    width: 100%;
 }
 
 #header_box{
     background-color: rgb(196, 119, 219);
-    width:90vw;
+    width: calc(100vw -30px);
     height: 200px;
     padding: 10px;
+    margin: 15px;
+    border: 10px;
     font-family: Verdana, Tahoma, sans-serif;
-    position: fixed;
+    position: static;
+    
 
 }
 
 #menu_box{
     background-color: rgb(196, 119, 219);
-    width:90vw;
+    width: calc(100vw -30px);
     height: 100px;
-    padding: 20px;
+    padding: 10px;
+    margin: 15px;
+    border: 10px;
     font-family: Verdana, Tahoma, sans-serif;
-    position: fixed;
+    position: static;
+}
+
+
+
+#container {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    gap: 10px;
+}
+
+/* Left Sidebar */
+#left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+#aside1 {
+    background-color: rgb(196, 119, 219);
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+}
+
+#aside2 {
+    background-color: rgb(196, 119, 219);
+    width: 200px;
+    height: 520px;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+}
+
+#aside3 {
+    background-color: rgb(196, 119, 219);
+    width: 200px;
+    height: 680px;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+}
+
+/* Main Content */
+#main {
+    width: 600px;
+    background-color: rgb(196, 119, 219);
+    padding: 10px;
+    margin: 15px;
+    width: 95%;
+}
+
+#sections{
+    background-color: rgb(234, 193, 225);
+    padding: 30px;
+    height: 200px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+footer{
+    background-color: #8d1ac7;
+    width: calc(100vw -30px);
+    height: 300px;
+    padding: 10px;
+    margin: 15px;
+    border: 10px;
+    font-family: Verdana, Tahoma, sans-serif;
+    position: static; 
 }
