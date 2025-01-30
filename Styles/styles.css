@@ -1,5 +1,10 @@
 #header_box{
     background-color: rgb(196, 119, 219);
     color: blueviolet;
+    width: 600px;
+    height: 150px;
+    padding: 10px;
+    margin: 10px;
+    font-family: Verdana, Tahoma, sans-serif;
 
 }
