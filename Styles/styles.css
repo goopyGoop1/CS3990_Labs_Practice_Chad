@@ -1,9 +1,14 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 #header_box{
     background-color: rgb(196, 119, 219);
     width:100vw;
     height: 150px;
     padding: 10px;
-    margin: 10px;
     font-family: Verdana, Tahoma, sans-serif;
 
 }
