@@ -1,5 +1,5 @@
 body, html {
-    margin: 0;
+    margin: 10px;
     padding: 0;
     width: 100%;
 }
@@ -7,8 +7,16 @@ body, html {
 #header_box{
     background-color: rgb(196, 119, 219);
     width:100vw;
-    height: 150px;
+    height: 200px;
     padding: 10px;
     font-family: Verdana, Tahoma, sans-serif;
 
+}
+
+#menu_box{
+    background-color: rgb(196, 119, 219);
+    width:100vw;
+    height: 100px;
+    padding: 10px;
+    font-family: Verdana, Tahoma, sans-serif;
 }
