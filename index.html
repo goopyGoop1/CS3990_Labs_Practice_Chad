@@ -1,33 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- A head section that includes metadata -->
-    <!-- Specifies the character encoding for the HTML document -->
+    <!-- Metadata and CSS link -->
     <meta charset="UTF-8" />
-    <!-- Setting the viewport to make your website look good on all devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- The folllowing forces Internet Explorer to use the newest rendering engine available on the user’s computer, 
-      rather than older compatibility modes. 
-      This ensures that your webpage is displayed using the latest standards-compliant engine, improving both performance and design consistency-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!--Define a description of your web page-->
-    <meta name="description" content="Example 1 for HTML & CSS module" />
-    <meta name="author" content="Hanna" />
-    <title>cs3990 Example 1</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="Favicons\favicon-96x96.png"
-      sizes="96x96"
-    />
+    <meta name="description" content="Lab2" />
+    <meta name="author" content="Chad" />
+
+    <title>Lab 2</title>
+
+    <!-- Favicon links -->
+    <link rel="icon" href="Favicons/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="Favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="Favicons/favicon.svg">
+    <link rel="apple-touch-icon" href="Favicons/apple-touch-icon.png">
+    <link rel="manifest" href="Favicons/site.webmanifest">
+    <meta name="theme-color" content="#fffff">
+    
+    
+    <!-- Google Font data -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="Styles\styles.css" />
   </head>
+  
+  
+  
   <body>
-    <h1> HI i'm chad</h1>
-    <p>Some text ...</p>
-    <h2>Projects</h2>
-    <p>Some text</p>
+    <div id="header_box">
+      <h1>Chad's CV</h1>
+
+      <img src="Images/webpage_imgae1.jpg" alt="Image of Chad">
+      
+    </div>
+
+    <div id="menu_box">
+    <menu>
+      <nav id="menu-buttons">
+          <a href="https://www.nwpolytech.ca/departments/science/" class="menu-link">CS in NWP</a>
+          <a href="https://www.nwpolytech.ca/departments/science/faculty.html" class="menu-link">Faculty & Staff</a>
+          <a href="https://www.nwpolytech.ca/" class="menu-link">NWP Home</a>
+      </nav>
+  </menu>
+  
+
+    </div>
     
+
+    <div id="container">
+      <div id="left">
+          <aside id="aside1">
+            <img id="img-aside-one" src="Images/nwp.jpg" alt="Fornt of NWP">
+          </aside>
+          <aside id="aside2">
+            <ul>
+              <li>1.<p>Intro to CS</p></li>
+              <li>2.<p>Data Structures</p></li>
+              <li>3.<p>Viedo Production</p></li>
+              <li>4.<p>Graphics</p></li>
+              <li>5.<p>C++</p></li>
+              <li>6.<p>Bussiness</p></li>
+              <li>7.<p>Data Bases</p></li>
+              <li>8.<p>Linear Algebra</p></li>
+              <li>9.<p>Networking</p></li>
+            </ul>
+          </aside>
+      </div>
+
+      <main id="main">
+          <section id="sections">
+            <h2>Personal Skills and Qualities</h2>
+            <p>
+                I am a highly motivated and adaptable individual with a strong passion for continuous learning and problem-solving. 
+                With excellent communication skills, I can effectively convey ideas, collaborate with teams, and build meaningful 
+                professional relationships. My ability to think critically and approach challenges with a logical mindset allows 
+                me to develop innovative solutions and make informed decisions.
+            </p>
+            <p>
+                I thrive in fast-paced environments, demonstrating strong time management and organizational skills to balance 
+                multiple projects efficiently. My keen attention to detail, coupled with a strong work ethic, ensures high-quality 
+                results in everything I do. Whether working independently or as part of a team, I am always eager to take on new 
+                challenges, grow my skill set, and contribute positively to any environment.
+            </p>
+          </section>
+          <section id="sections">
+            <h2>Education</h2>
+            <p>
+              I am currently pursuing a degree in <strong>Computer Science</strong>, driven by a deep passion for 
+              <strong>Artificial Intelligence (AI)</strong> and <strong>Information Security</strong>. My studies have 
+              equipped me with a strong foundation in programming, data structures, and software development, while also 
+              allowing me to explore advanced concepts in AI and cybersecurity.
+          </p>
+          <p>
+              I am particularly fascinated by the intersection of AI and security, focusing on how machine learning can 
+              enhance cybersecurity defenses and how ethical hacking plays a crucial role in protecting modern systems. 
+              Through hands-on projects and research, I have gained experience in areas such as <strong>machine learning, 
+              penetration testing, cryptography, and ethical hacking</strong>. 
+          </p>
+          </section>
+      </main>
+
+      <div> 
+        <aside id="aside3">
+            <div>
+                <ul>
+                    <li><img src="Images/done.png" alt="Item Done" class="list-icon"> <p class="cross-out ">Python<a href="#" class="red-x">&#10008;</a></p></li>
+                    <li><img src="Images/toDo.png" alt="Item To Do" class="list-icon"><p>Mobile App Development<a href="#" class="red-x">&#10008;</a></p></li>
+                    <li><img src="Images/done.png" alt="Item Done" class="list-icon"><p class="cross-out">Image Processing<a href="#" class="red-x ">&#10008;</a></p></li>
+                    <li><img src="Images/done.png" alt="Item Done" class="list-icon"><p class="cross-out">Linux & Command Line<a href="#" class="red-x">&#10008;</a></p></li>
+                    <li><img src="Images/toDo.png" alt="Item To Do" class="list-icon"><p>Ethical Hacking<a href="#" class="red-x">&#10008;</a></p></li>
+                    <li><img src="Images/toDo.png" alt="Item To Do" class="list-icon"><p>AI Basics<a href="#" class="red-x">&#10008;</a></p></li>
+                    <li><img src="Images/toDo.png" alt="Item To Do" class="list-icon"><p>Penetration Testing<a href="#" class="red-x">&#10008;</a></p></li>
+                    <li><img src="Images/done.png" alt="Item Done" class="list-icon"><p class="cross-out">Blockchain<a href="#" class="red-x ">&#10008;</a></p></li>
+                    <li><img src="Images/toDo.png" alt="Item To Do" class="list-icon"><p>Front-End Web Design<a href="#" class="red-x">&#10008;</a></p></li>
+                    </ul>
+            </div>
+            
+            <a href="https://www.nwpolytech.ca/" target="_blank">
+                <img src="Images/nwp2.jpg" alt="NWP Campus" class="aside3-img">
+            </a>
+        </aside>
+    </div>
+    
+  <footer id="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <div class="footer-column">
+                <a href="https://www.nwpolytech.ca/departments/science/" class="menu-link-footer">CS in NWP</a>
+                <a href="https://www.nwpolytech.ca/departments/science/faculty.html" class="menu-link-footer">Faculty & Staff</a>
+            </div>
+            <div class="footer-column">
+                <a href="https://www.nwpolytech.ca/" class="menu-link-footer">NWP Home</a>
+                <a href="https://github.com/" class="menu-link-footer" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="Images/5296499_fb_facebook_facebook logo_icon.ico" alt="Facebook" class="icon">
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="Images/5296521_play_video_vlog_youtube_youtube logo_icon.png" alt="YouTube" class="icon">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="Images/5296765_camera_instagram_instagram logo_icon.png" alt="Instagram" class="icon">
+            </a>
+        </div>
+    </div>
+</footer>
+
+    
+
   </body>
 </html>
+
