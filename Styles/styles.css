@@ -191,7 +191,7 @@ ul li p {
     padding: 5px;
     gap: 10px; 
     height: 35px;
-   
+
 }
 
 
@@ -235,8 +235,8 @@ ul li p {
     border-radius: 15px;
     object-fit: cover;
     position: fixed;
-    top: 800px;
-    left: 1750px;
+    top: 585px;
+    left: 1350px;
 }
 
 
@@ -269,7 +269,7 @@ ul li p {
     font-optical-sizing: auto;
     color: darkorchid;
     font-style: normal;
-    font-size: 18px;
+    font-size: 1vw;
 }
 
 
