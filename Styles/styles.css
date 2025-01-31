@@ -237,6 +237,7 @@ ul li p {
     position: fixed;
     top: 585px;
     left: 1350px;
+    z-index: 3;
 }
 
 
@@ -282,7 +283,7 @@ ul li p {
 
 #footer {
     background-color: #8d1ac7;
-    width: 96.3vw; /* Maintain your desired width */
+    width: 95.3vw; /* Maintain your desired width */
     padding: 5px;
     margin: 0;
     position: fixed;
@@ -292,6 +293,7 @@ ul li p {
     color: white;
     font-family: Verdana, Tahoma, sans-serif;
     text-align: center; /* Center text within the footer */
+    z-index: 3;
 }
 
 
