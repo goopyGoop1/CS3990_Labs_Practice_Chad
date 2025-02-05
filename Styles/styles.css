@@ -27,9 +27,7 @@ body {
     /* margin: 0; */ */
 /* } */ */ */
 
-header h1 {
-    text-align: center; /* center align main header */
-}
+
 
 main {
     text-align: justify; /* justify text in main */
@@ -41,6 +39,7 @@ main {
     line-height: 30px; /* set line spacing */
     margin-bottom: 20px; /* spacing below each paragraph */
     text-align: center; /* center text */
+    color: aquamarine;
 }
 
 .paragraph-two {
@@ -49,7 +48,6 @@ main {
     color: #333; /* dark gray text */
     border-bottom: 2px solid red; /* red bottom border */
     padding-bottom: 5px; /* spacing for the red line */
-    letter-spacing: 30px;
 }
 
 .paragraph-three {
@@ -59,16 +57,38 @@ main {
     border-bottom: none; /* no border */
 }
 
+.paragraph-three:last-of-type{
+    color:rgb(255, 238, 0);
+
+}
+
 .paragraph-four {
-    font-size: 16px; /* default size */
+    font-size: 12px; /* default size */
     font-family: 'verdana', sans-serif; /* different font */
-    color: #555; /* medium gray */
+    color: red; /* medium gray */
+}
+
+.paragraph-four:not(.spec_p):not(:last-of-type) {
+    font-size: 18px; /* Increases font size except for .spec_p and last paragraph */
+}
+
+.paragraph-four:nth-of-type(even)::before{
+    content: "👉";
+    display: inline-block;
+    margin: 10px;
+
 }
 
 /* image styles */
 .img-one {
     border: 3px solid red; /* red border */
     margin: 10px; /* spacing around */
+    transition: border;
+
+}
+
+.img-one:hover{
+    border: 5px solid red;
 }
 
 .img-one-p2 {
@@ -128,6 +148,10 @@ ul li {
 }
 
 /* headers */
+header h1 {
+    text-align: center; /* center align main header */
+}
+
 h2 {
     font-style: italic;
 }
@@ -163,6 +187,37 @@ h3 {
     font-family: 'lucida grande';
 }
 
+h1:nth-of-type(odd),
+h2:nth-of-type(odd),
+h3:nth-of-type(odd) {
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1:nth-of-type(odd)::before,
+h1:nth-of-type(odd)::after,
+h2:nth-of-type(odd)::before,
+h2:nth-of-type(odd)::after,
+h3:nth-of-type(odd)::before,
+h3:nth-of-type(odd)::after {
+    content: "";
+    flex-grow: 1;
+    height: 2px;
+    background-color: black;
+    margin: 0 10px;
+}
+
+h1:nth-of-type(even),
+h2:nth-of-type(even),
+h3:nth-of-type(even) {
+    background-image: linear-gradient(green,gold);
+}
+
 
 
 /* link styles */
@@ -191,7 +246,7 @@ p, img, a {
 
 /* custom ordered list */
 .custom-ordered-list {
-    list-style-type: lower-alpha;
+    list-style-type:decimal;
     margin-left: 20px;
     font-family: arial, sans-serif;
     font-size: 16px;
@@ -199,9 +254,38 @@ p, img, a {
     color: #333;
 }
 
+
+
 .custom-ordered-list li {
     margin-bottom: 10px;
     color: #007bff; /* blue list items */
+}
+
+.custom-ordered-list li:first-of-type{
+    color: green;
+}
+
+.custom-ordered-list li:last-child{
+    color: green;
+}
+
+
+
+.bullet-list {
+    list-style-type: disc !important; /* Ensures bullets */
+    list-style-position: inside;
+    padding-left: 20px;
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bullet-list li {
+    display: list-item; 
+    color: rgb(184, 235, 137);
+}
+
+.bullet-list li:not(.spec_item) {
+    font-family: "Arial", sans-serif; /* Change font for all except .spec_item */
 }
 
 .custom-ordered-list li::marker {
@@ -259,8 +343,33 @@ p, img, a {
     transition: background-color 0.3s ease;
 }
 
-.button-list a:hover {
-    background-color: #0056b3; /* darker on hover */
+.contact-info li:nth-child(even) a {
+    background-image: radial-gradient(yellow, orange, red);
+}
+
+.custom-ordered-list a:nth-of-type(odd){
+    background-image: conic-gradient(red, lime, violet, skyblue, pink, magenta);
+    color: black;
+}
+
+.button-list .top-button:hover {
+    color: transparent; /* Makes text invisible */
+}
+
+.button-list .top-button:hover::before {
+    content: "👆"; /* Shows only the emoji */
+    color: #fff; /* Keeps emoji visible */
+    display: inline-block;
+}
+
+.button-list .bottom-button:hover {
+    color: transparent; /* Hides text */
+}
+
+.button-list .bottom-button:hover::before {
+    content: "👇"; /* Shows only the emoji */
+    color: #fff;
+    display: inline-block;
 }
 
 /* floated elements */
@@ -305,3 +414,32 @@ p, img, a {
 .book-list li {
     margin-bottom: 15px;
 }
+
+nav {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007bff; /* Blue link color */
+    font-style: italic;
+    padding: 0 10px;
+    position: relative;
+}
+
+nav a::before {
+    content: " / "; /* Adds a forward slash before each link */
+    color: #555; /* Dark gray color */
+    position: absolute;
+    left: -10px;
+}
+
+nav a:first-child::before {
+    content: "»"; /* Special arrow icon for the first breadcrumb */
+    left: 0;
+    color: #555;
+}
+
