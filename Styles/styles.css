@@ -498,8 +498,8 @@ nav a:first-child::before {
 
 
 .row{
-    display: flex;
-    flex-direction: row;
+    margin-left: 40%;
+    margin-right: 40%;
     justify-content: center;
     align-items: center;
     
@@ -519,6 +519,7 @@ nav a:first-child::before {
     width: 30px;
     height: 30px;
     margin: 5%;
+    padding: 1%;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -567,6 +568,8 @@ nav a:first-child::before {
 #transform-box1 {
     height: 50px; /* Smaller height */
     width: 150px; /* Smaller width */
+    padding: 1%;
+    margin: 2%;
     transition: all 0.3s ease-in-out;
     text-align: center;
     font-size: 12px; /* Smaller text */
@@ -581,6 +584,8 @@ nav a:first-child::before {
 #transform-box2 {
     height: 50px; /* Smaller height */
     width: 150px; /* Smaller width */
+    padding: 1%;
+    margin: 2%;
     transition: all 0.3s ease-in-out;
     text-align: center;
     font-size: 12px; /* Smaller text */
@@ -596,6 +601,8 @@ nav a:first-child::before {
 #transform-box3 {
     height: 50px; /* Smaller height */
     width: 150px; /* Smaller width */
+    padding: 1%;
+    margin: 2%;
     transition: all 0.3s ease-in-out;
     text-align: center;
     font-size: 12px; /* Smaller text */
@@ -609,10 +616,27 @@ nav a:first-child::before {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
 }
 
+#transform-box4{
+    height: 50px; 
+    width: 150px;
+    padding: 1%;
+    margin: 2%; 
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    background-color: rgb(10, 174, 106);
+    opacity: 1.0;
+}
+
+#transform-box4:hover{
+    opacity: 0.5;
+}
+
+
+
+
 /* ROW CONTAINER */
 .row2 {
-    display: flex;
-    flex-direction: row;
+    
     justify-content: center;
     align-items: center;
     gap: 10px; /* Smaller gap */
