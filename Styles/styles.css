@@ -473,6 +473,33 @@ nav a:first-child::before {
     transform: translateX(500px);
 }
 
+
+#div3 {
+    width: 90%; /* 90% of the parent container (body in this case) */
+    height: 300px; /* Adjust height as needed */
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto; /* Center the div */
+}
+
+#div3 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%; /* Smaller width */
+    height: 25%; /* Smaller height - makes it square */
+    transition: all 0.3s ease;
+    object-fit: cover; /* or contain, depending on how you want to handle aspect ratio */
+}
+
+#div3 img:hover {
+    top: auto; /* Override top positioning */
+    left: auto; /* Override left positioning */
+    bottom: 0; /* Position at the bottom */
+    right: 0; /* Position at the right */
+}
+
+
 .row{
     display: flex;
     flex-direction: row;
