@@ -617,21 +617,36 @@ nav a:first-child::before {
 }
 
 #transform-box4{
-    height: 50px; 
-    width: 150px;
-    padding: 1%;
-    margin: 2%; 
+    height: 75px; 
+    width: 175px; 
     transition: all 0.3s ease-in-out;
     text-align: center;
-    background-color: rgb(10, 174, 106);
     opacity: 1.0;
 }
 
-#transform-box4:hover{
-    opacity: 0.5;
+#transform-box4 img{
+    height: 100%; 
+    width: 100%;
+    margin-bottom: 10px;
+    object-fit: cover;
 }
 
+#transform-box4:hover{
+    opacity: 0.25;
+}
 
+#transform-box5{
+    height: 75px; 
+    width: 175px; 
+    
+}
+
+#transform-box5 img{
+    height: 100%; 
+    width: 100%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
 
 
 /* ROW CONTAINER */
