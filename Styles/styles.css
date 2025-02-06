@@ -464,6 +464,7 @@ nav a:first-child::before {
     font-size: xx-large;
     font-optical-sizing: auto;
     font-style: normal;
+    color: darkorange;
     font-variation-settings:
     "EDPT" 1000,
     "EHLT" 100;;
@@ -475,28 +476,24 @@ nav a:first-child::before {
 
 
 #div3 {
-    width: 90%; /* 90% of the parent container (body in this case) */
-    height: 300px; /* Adjust height as needed */
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
     position: relative;
     overflow: hidden;
-    margin: 20px auto; /* Center the div */
 }
 
 #div3 img {
+    width: 15%;
+    height: 25%;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 15%; /* Smaller width */
-    height: 25%; /* Smaller height - makes it square */
-    transition: all 0.3s ease;
-    object-fit: cover; /* or contain, depending on how you want to handle aspect ratio */
+    transition:  all 10.3s ease;
+    object-fit: cover;
 }
 
 #div3 img:hover {
-    top: auto; /* Override top positioning */
-    left: auto; /* Override left positioning */
-    bottom: 0; /* Position at the bottom */
-    right: 0; /* Position at the right */
+    bottom: 0;
+    right: 0;
 }
 
 
@@ -515,6 +512,8 @@ nav a:first-child::before {
     
     
 }
+
+
 
 .row img{
     width: 30px;
@@ -563,6 +562,72 @@ nav a:first-child::before {
     transform: rotate(180deg);
 }
 
+
+
+#transform-box1 {
+    height: 50px; /* Smaller height */
+    width: 150px; /* Smaller width */
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    font-size: 12px; /* Smaller text */
+    background-color: lightblue;
+}
+
+#transform-box1:hover {
+    border-top-left-radius: 20px; /* Smaller rounding */
+    background-color: lightyellow;
+}
+
+#transform-box2 {
+    height: 50px; /* Smaller height */
+    width: 150px; /* Smaller width */
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    font-size: 12px; /* Smaller text */
+    background-color: darkmagenta;
+}
+
+#transform-box2:hover {
+    border-style: dashed;
+    border-color: rgb(107, 90, 202);
+    background-color: rgb(212, 161, 235);
+}
+
+#transform-box3 {
+    height: 50px; /* Smaller height */
+    width: 150px; /* Smaller width */
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    font-size: 12px; /* Smaller text */
+    background-color: crimson;
+    box-shadow: none;
+}
+
+#transform-box3:hover {
+    height: 30px; /* Shrinks but not too tiny */
+    width: 30px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* ROW CONTAINER */
+.row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Smaller gap */
+    padding: 10%;
+}
+
+.row2 div {
+    padding: 10px; /* Reduce padding */
+    width: auto; /* Auto width based on content */
+    
+}
+
+#p4{
+    background-image: linear-gradient(rgb(237, 223, 223), rgb(237, 223, 223));
+}
 
 
 
