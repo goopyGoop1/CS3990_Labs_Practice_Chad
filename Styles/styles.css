@@ -487,13 +487,14 @@ nav a:first-child::before {
     width: 15%;
     height: 25%;
     position: absolute;
-    transition:  all 10.3s ease;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
     object-fit: cover;
 }
 
 #div3 img:hover {
-    bottom: 0;
-    right: 0;
+    transform: translate(100%, 100%);
 }
 
 
