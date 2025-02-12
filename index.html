@@ -13,6 +13,12 @@
     <!--Define a description of your web page-->
     <meta name="description" content="Example 1 for HTML & CSS module" />
     <meta name="author" content="Hanna" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&family=Major+Mono+Display&family=Quintessential&family=Sancreek&display=swap" rel="stylesheet">
+    
+    
     <title>cs3990 Example 1</title>
     <link
       rel="icon"
@@ -41,30 +47,105 @@
 
       <div class="col-2 content">
         
-        <a href="#home" class="button">home</a>
-        <a href="#provtr" class="button">Provinces & Territories</a>
-        <a href="#albeta" class="button">My Alberta</a>
+        <div>
+          <a href="#home" class="button">Home</a>
+          <a href="#provtr" class="button">Provinces & Territories</a>
+          
+          <div class=" dropdown">
+            <a href="#alberta" class="button">My Alberta</a>
+              <div class="dropdown-content">
+                <a href="#public">Public Holidays</a>
+                <a href="#pparks">Provincal Parks</a>
+              </div>
+
+          </div>
+        </div>
+        
+              
+          
         
         
         <div  class="section">
           
           <p id="home">
+            <!-- <h2 id="home">Learn more about Canada</h2> -->
           Canada is the second-largest country in the world by land area, known for its stunning natural landscapes, diverse culture, and strong economy. <br>
           It is a bilingual nation with English and French as its official languages. <br>
           Canada is home to vibrant cities like Toronto, Vancouver, and Montreal, as well as breathtaking natural wonders such as the Rocky Mountains, Niagara Falls, and the Northern Lights. <br>
           The country is renowned for its high quality of life, universal healthcare system, and progressive social policies. <br>
           With a rich history shaped by Indigenous cultures, European settlers, and global immigration, Canada embraces multiculturalism and is known for its welcoming and inclusive society. 
         </p>
+        
         <p id="provtr">
           Canada is made up of <strong>10 provinces</strong> and <strong>3 territories</strong>, each with unique geography and culture. 
           The provinces, such as Ontario, Quebec, and British Columbia, have more autonomy and are responsible for their own governance. 
           The three territories—Yukon, Northwest Territories, and Nunavut—are largely governed by the federal government due to their lower populations and vast northern landscapes. 
           From the Atlantic coastline of Newfoundland to the Rocky Mountains of Alberta, each region contributes to Canada's rich diversity.
-      </p>
+          <ul class="canada-list">
+            <li class="province bc">British Columbia</li>
+            <li class="province ab">Alberta</li>
+            <li class="province mb">Manitoba</li>
+            <li class="province nb">New Brunswick</li>
+            <li class="province nfld">Newfoundland and Labrador</li>
+            <li class="province ns">Nova Scotia</li>
+            <li class="province on">Ontario</li>
+            <li class="province pei">Prince Edward Island</li>
+            <li class="province qc">Quebec</li>
+            <li class="province sk">Saskatchewan</li>
+            <li class="province nt">Northwest Territories</li>
+            <li class="province nu">Nunavut</li>
+            <li class="province yt">Yukon</li>
+          </ul> 
+        </p>
+          
+      
+            
+        <p id="alberta">
+          Alberta is a province in western Canada, known for its vast landscapes and natural resources. <br>
+          It is home to the Rocky Mountains, the prairies, and the oil sands, making it a key player in Canada's economy. <br>
+          The capital city is Edmonton, while Calgary is the largest city and a major business hub. <br>
+          Alberta is famous for Banff and Jasper National Parks, attracting millions of tourists every year. <br>
+          The province has a rich cultural heritage, with Indigenous communities, ranching traditions, and a strong energy sector. <br>
+            
+        </p>
+      <ul id="pparks">
+        <li>Writing-on-Stone Provincial Park</li>
+        <li>Dinosaur Provincial Park</li>
+        <li>Elk Island National Park</li>
+        <li>Fish Creek Provincial Park</li>
+        <li>Peter Lougheed Provincial Park</li>
+        <li>Sheep River Provincial Park</li>
+        <li>William A. Switzer Provincial Park</li>
+        <li>Lundbreck Falls Provincial Park</li>
+        <li>Big Knife Provincial Park</li>
+        <li>Castle Provincial Park</li>
+        <li>Kinbrook Island Provincial Park</li>
+        <li>Miquelon Lake Provincial Park</li>
+        <li>Wabamun Lake Provincial Park</li>
+        <li>Lesser Slave Lake Provincial Park</li>
+        <li>Gregg Lake Provincial Park</li>
+      </ul>
+
+      <ul id="public">
+        <li>New Year's Day - January 1</li>
+        <li>Family Day - Third Monday in February</li>
+        <li>Good Friday - Friday before Easter Sunday</li>
+        <li>Easter Monday (for federal employees) - Monday after Easter Sunday</li>
+        <li>Victoria Day - Monday preceding May 25</li>
+        <li>Canada Day - July 1</li>
+        <li>Heritage Day (optional) - First Monday in August</li>
+        <li>Labour Day - First Monday in September</li>
+        <li>National Day for Truth and Reconciliation - September 30 (federal holiday)</li>
+        <li>Thanksgiving Day - Second Monday in October</li>
+        <li>Remembrance Day - November 11</li>
+        <li>Christmas Day - December 25</li>
+        <li>Boxing Day (for federal employees) - December 26</li>
+      </ul>
+
         <img src="Images/Canada-Map.jpg" alt="Map of Canada and Capitals">
-      </div>
+    </div>
         
-      </div>
+  </div>
 
       <div class="col-3 right">
         <h2>What?</h2>
