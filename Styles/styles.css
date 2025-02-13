@@ -6,6 +6,10 @@
   * {
     box-sizing: border-box;
 }
+
+body {
+    margin-bottom: 60px; /* Adjust based on your footer height */
+}
 .header{
     background-image: linear-gradient(90deg, red,white,red);
     color: red ;
@@ -150,9 +154,9 @@
     list-style: '🎈';
 }
 
-.section p:target ~ul{
-    display: block;
-}
+
+
+
 
 .section div:target ~ img,
 .section ul:target ~ img, 
@@ -181,83 +185,31 @@
 
 }
 
-
-#alberta{
+#provtr ~ .canada-list{
     display: none;
-}
-
-#alberta:target{
-    display: block;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none; 
-    position: absolute;
-    background-color: white;
-    min-width: 150px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content { 
-    display: block;
-}
-
-.dropdown-content a {
-    color: red;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
-    border-bottom: 1px solid red;
-}
-
-.dropdown-content a:hover {
-    background-color: red;
-    color: white;
-}
-
-#pparks{
-    display: none;
-}
-
-#pparks:target{
-    display: block;
-}
-
-#public{
-    display: none;
-}
-
-#public:target{
-    display: block;
-    
-}
-
-#public{
-    display: none;
-}
-
-#public:hover{
-    display: block;
-
-}
-
-.canada-list{
     font-size: 30px;
     font-family: "Major Mono Display", serif;
     font-weight: 400;
     font-style: normal;
 }
 
+#provtr:target ~ .canada-list{
+    display: block;
+
+}
+#provtr ~ .province{
+    display: none;
+}
+
+#provtr:target ~ .province {
+    display: block;
+}
+
+
 /* General styling for all flags */
 .province::before {
     content: "";
-    display: inline-block;
+    display: inline-block ;
     background-size: contain;
     background-repeat: no-repeat;
     width: 50px;  /* Keep large flag size */
@@ -329,21 +281,179 @@
 
 
 
+#alberta{
+    display: none;
+}
+
+#alberta:target{
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content { 
+    display: block;
+}
+
+.dropdown-content a {
+    color: red;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid red;
+}
+
+.dropdown-content a:hover {
+    background-color: red;
+    color: white;
+}
+
+#pparks{
+    display: none;
+}
+
+#pparks:target{
+    display: block;
+}
+
+#public{
+    display: none;
+}
+
+#public:target{
+    display: block;
+    
+}
+
+#public{
+    display: none;
+}
+
+#public:hover{
+    display: block;
+
+}
+
+
+
+
 
 .right {
-    background-color:red;
+    background-color: red;
     color: #ffffff;
     text-align: center;
+    padding: 20px; /* Increase padding to extend */
+    margin-right: -20px; /* Moves it beyond the child div */
+    
 }
+
+.right div{
+    min-height: 100px;
+    width: 40%;
+    float: left;
+    margin: 5%;
+}
+
+.right div > div {
+    text-align: left;
+    border-top-right-radius: 20px;
+    border: 5px solid gray;
+    background-color: rgb(140, 5, 5);
+    padding: 10px;
+    margin: 7%;
+    margin-bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    vertical-align: top;
+    font-size: medium;
+    
+}
+
+
+.right h4{
+    border-radius: 0 20px 20px 0;
+    background-color: rgb(220, 117, 108);
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    width: 75%;
+    height: auto;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.right h4.popular {
+    background-color: rgb(247, 78, 78);
+}
+
+
+
+
+.small-text {
+    display: inline-block; /* Ensures both are on the same line */
+    width: 90%; /* Adjusts width to allow space for both */
+    text-align: center;
+    font-size: small;
+    margin: 0;
+    margin-top: 0; /* Adds spacing */
+    color: lightgray;
+}
+
+.small-text.cybersecurity:hover::after {
+    content: " $65.79 p/hr";
+    font-weight: bold;
+}
+
+.small-text.coordinator:hover::after {
+    content: " $35.42 p/hr";
+    font-weight: bold;
+}
+
+.small-text.analyst:hover::after {
+    content: " $42.50 p/hr"; /* Example rate for IT Analyst II */
+    font-weight: bold;
+}
+
+.small-text.technician:hover::after {
+    content: " $30.25 p/hr"; /* Example rate for Service Technician */
+    font-weight: bold;
+}
+
+
 
 .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     padding: 15px;
     text-align: center;
-    color:  black;
+    color: black;
     font-weight: bold;
-    background-image: linear-gradient(90deg, red,white,red);
+    background-image: linear-gradient(90deg, red, white, red);
 }
 
+.left-footer {
+    float: left;
+}
+
+.right-footer {
+    float: right;
+}
 
 
 
@@ -353,13 +463,50 @@
 
 }
 
-  /* For desktop: */
+/* For desktop: */
 @media only screen and (min-width: 768px) {
-.col-1,.col-3 {width: 25%;}
-.col-2 {width: 50%;}
+    .col-1, .col-3 {
+        width: 25%;
+    }
+
+    .col-2 {
+        width: 50%;
+    }
 }
 
-/* 📱 Small Phones (iPhone SE, older Androids) */
+/* Responsive media queries for .right and other sections */
+
+/* For tablets and below (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .right {
+        padding: 10px;
+        margin-right: 0;
+    }
+
+    .right div {
+        width: 90%;
+        float: none;
+        margin: 5% auto;
+    }
+
+    .right div > div {
+        padding: 8px;
+        font-size: small;
+    }
+
+    .right h4 {
+        width: 100%;
+        position: relative;
+        border-radius: 0;
+    }
+
+    .small-text {
+        width: 100%;
+        font-size: small;
+    }
+}
+
+/* For mobile devices (max-width: 400px) */
 @media (max-width: 400px) {
     .button {
         padding: 8px 12px;
@@ -405,7 +552,7 @@
     }
 }
 
-/* 📱 Medium Phones (iPhone 14, Pixel, Samsung Galaxy) */
+/* Small devices (401px - 460px) */
 @media (min-width: 401px) and (max-width: 460px) {
     .button {
         padding: 10px 15px;
@@ -443,9 +590,14 @@
     .canada-list {
         font-size: 22px;
     }
+
+    .small-text {
+        width: 100%;
+        font-size: small;
+    }
 }
 
-/* 📱 Large Phones (iPhone 14 Pro Max, Galaxy Ultra) */
+/* Medium devices (461px - 768px) */
 @media (min-width: 461px) and (max-width: 768px) {
     .button {
         padding: 12px 18px;
@@ -485,7 +637,7 @@
     }
 }
 
-/* 📟 Tablets (iPads, Surface Go) */
+/* Large tablets (769px - 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
     .button {
         padding: 14px 20px;
@@ -529,7 +681,7 @@
     }
 }
 
-/* 💻 Small Laptops & Large Tablets (MacBook Air, Chromebook) */
+/* Small desktops (1025px - 1366px) */
 @media (min-width: 1025px) and (max-width: 1366px) {
     .button {
         padding: 16px 22px;
@@ -569,7 +721,7 @@
     }
 }
 
-/* 🖥️ Large Laptops & Desktops (1440p, MacBook Pro) */
+/* Large desktops (1367px - 1920px) */
 @media (min-width: 1367px) and (max-width: 1920px) {
     .button {
         padding: 18px 24px;
@@ -587,69 +739,13 @@
         top: 12px;
         margin-right: 12px;
     }
-
-    .province:hover::after {
-        font-size: 20px;
-    }
-
-    ul {
-        padding-left: 25px;
-    }
-
-    li {
-        font-size: 22px;
-    }
-
-    .header {
-        font-size: 34px;
-    }
-
-    .canada-list {
-        font-size: 32px;
-    }
 }
 
-/* 🖥️ Ultra-Wide & 4K Displays */
+/* Ultra-wide screens (1921px+) */
 @media (min-width: 1921px) {
     .button {
         padding: 20px 26px;
         font-size: 24px;
         margin: 10px;
     }
-
-    .dropdown-content {
-        min-width: 250px;
-    }
-
-    .province::before {
-        width: 60px;
-        height: 60px;
-        top: 15px;
-        margin-right: 15px;
-    }
-
-    .province:hover::after {
-        font-size: 22px;
-    }
-
-    ul {
-        padding-left: 30px;
-    }
-
-    li {
-        font-size: 24px;
-    }
-
-    .header {
-        font-size: 36px;
-    }
-
-    .canada-list {
-        font-size: 34px;
-    }
-
-    .section img {
-        width: 98%;
-    }
 }
-
