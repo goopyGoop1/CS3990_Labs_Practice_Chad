@@ -126,61 +126,106 @@ body{
 }
 
 /* Books Grid - Fully Dynamic */
-.books-grid {
+.class-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusts based on available space */
     gap: 20px;
-    padding: 40px 20px;
-    margin: 0 auto;
+    padding: 40px;
+    margin: 0;
     text-align: center;
     justify-content: center;
 }
 
-/* Book Card */
-.book-card {
+
+.class-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100%; /* Makes it responsive */
-    max-width: 250px; /* Prevents it from growing too large */
+    width: 100%; 
+    max-width: 250px;
+
 }
 
-/* Image Container */
-.book-image {
+.class-image:hover{
+    transform: scale(1.2, 1.2);
+}
+
+
+.class-image {
     width: 100%;
-    aspect-ratio: 1 / 1.3; /* Maintains consistent height relative to width */
+    aspect-ratio: 1 / 1.5; 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 8px 8px 0 0; /* Rounded top corners only */
+    border-radius: 8px 8px 0 0; 
 }
 
-/* Background Images */
-.book-card:nth-child(1) .book-image {
+
+.class-card:nth-child(1) .class-image {
     background-image: url('../Images/cs1140.jpg');
 }
 
-.book-card:nth-child(2) .book-image {
+.class-card:nth-child(2) .class-image {
     background-image: url('../Images/cs1150.jpg');
 }
 
-.book-card:nth-child(3) .book-image {
+.class-card:nth-child(3) .class-image {
     background-image: url('../Images/stats.jpg');
 }
 
-.book-card:nth-child(4) .book-image {
+.class-card:nth-child(4) .class-image {
     background-image: url('../Images/cs2010.jpg');
 }
 
-/* Book Title */
-.book-card p {
+
+.class-card p {
     width: 100%;
-    padding: 15px;
+    padding: 40px;
     font-weight: bold;
     font-size: 14px;
     color: black;
     border-radius: 0 0 8px 8px; /* Rounded bottom corners */
     margin: 0;
 }
+
+.class-card:nth-child(1):hover p::after{
+    content: "Credits - 3\A Total Hours - 90";
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+    margin-top: 10px; 
+    white-space: pre-line; 
+}
+
+.class-card:nth-child(2):hover p::after{
+    content: "Credits - 3\A Total Hours - 90";
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+    margin-top: 10px; 
+    white-space: pre-line; 
+}
+
+.class-card:nth-child(3):hover p::after{
+    content: "Credits - 3\A Total Hours - 75";
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+    margin-top: 10px; 
+    white-space: pre-line; 
+}
+.class-card:nth-child(4):hover p::after{
+    content: "Credits - 3\A Total Hours - 90";
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+    margin-top: 10px; 
+    white-space: pre-line; 
+}
+
 
