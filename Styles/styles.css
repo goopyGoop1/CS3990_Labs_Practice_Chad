@@ -79,14 +79,14 @@ body{
     height: 100%;
     border-radius: 20px 20px 0 0; 
     object-fit: cover;
-    grid-row: 1 / 2; /* Places image in the first row */
+    grid-row: 1 / 2; 
     grid-column: 1 / 2;
 }
 
 .overlay-text {
-    display: flex; /* Use flex for better text alignment */
-    align-items: left; /* Centers text vertically */
-    justify-content: left; /* Aligns text to the left */
+    display: flex; 
+    align-items: left; 
+    justify-content: left; 
     background: rgba(0, 0, 0, 0.6);
     color: white;
     font-size: 1rem;
@@ -125,10 +125,9 @@ body{
     background-color: #d18b00;
 }
 
-/* Books Grid - Fully Dynamic */
 .class-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusts based on available space */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     gap: 20px;
     padding: 40px;
     margin: 0;
@@ -185,7 +184,7 @@ body{
     font-weight: bold;
     font-size: 14px;
     color: black;
-    border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+    border-radius: 0 0 8px 8px; 
     margin: 0;
 }
 
