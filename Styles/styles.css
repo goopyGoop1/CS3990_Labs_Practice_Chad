@@ -32,13 +32,13 @@ body {
 }
 
 
-.box img {
-    max-width: 100%; /* Ensure the image does not exceed the box width */
-    height: 90%; /* Maintain aspect ratio */
-    display: block; /* Ensures the image is centered properly */
-    margin: 0 auto; /* Centers the image horizontally */
+/* .box img {
+    max-width: 100%; 
+    height: 90%; 
+    display: block; 
+    margin: 0 auto; 
     align-items:start;
-}
+} */
 
 .box p {
     margin: 5px 0; /* Adds some space around paragraphs */
@@ -75,6 +75,6 @@ body {
 .box:nth-child(2) { grid-row: 1 / span 4; height: 100%; }
 .box:nth-child(3) { grid-row: 4;}
 
-.cat{
-    grid-area: 1/ 2/ 3/ 2;
+.box div:nth-child(1){
+    grid-area: 1/ 2/ -4/ 3;
 }
