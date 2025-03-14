@@ -22,15 +22,17 @@ body {
     text-align: center;
     font-weight: bold;
     color: white;
-    padding-top: 10px;
-    height: 40px;
+    padding: 10px; /* Adjusted padding to include top and bottom */
+    height: auto; /* Allow the box to grow based on content */
+    min-height: 40px; /* Minimum height to ensure consistency */
     align-items: center;
     border-radius: 5px;
+    overflow: hidden; /* Prevent overflow */
 }
 
 .box img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Ensure the image does not exceed the box width */
+    height: 90%; /* Maintain aspect ratio */
     display: block; /* Ensures the image is centered properly */
     margin: 0 auto; /* Centers the image horizontally */
 }
