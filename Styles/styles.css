@@ -6,14 +6,14 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 66% 33%;
     grid-template-rows: repeat(4, 1fr);
     row-gap: 10px;
-    column-gap: 20px;
+    column-gap: 10px;
     height: 100vh;
-    width: 100%;
+    width: 98%;
     padding: 10px;
-    background-color: brown;
+    background-color: white;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -22,7 +22,8 @@ body {
     text-align: center;
     font-weight: bold;
     color: white;
-    padding: 10px; /* Adjusted padding to include top and bottom */
+    background-color: red;
+    padding: 0; /* Adjusted padding to include top and bottom */
     height: auto; /* Allow the box to grow based on content */
     min-height: 40px; /* Minimum height to ensure consistency */
     align-items: center;
@@ -30,19 +31,26 @@ body {
     overflow: hidden; /* Prevent overflow */
 }
 
+
 .box img {
     max-width: 100%; /* Ensure the image does not exceed the box width */
     height: 90%; /* Maintain aspect ratio */
     display: block; /* Ensures the image is centered properly */
     margin: 0 auto; /* Centers the image horizontally */
+    align-items:start;
 }
 
 .box p {
     margin: 5px 0; /* Adds some space around paragraphs */
     font-size: 14px; /* Adjust font size as needed */
     color: inherit; /* Inherits the color from .box */
+    
 }
+.box div{
+    
+    overflow: hidden;
 
+}
 .box a {
     color: inherit; /* Inherits the color from .box */
     text-decoration: none; /* Removes underline from links */
@@ -53,26 +61,20 @@ body {
     text-decoration: underline; /* Adds underline on hover */
 }
 
-.grid-container > div:nth-child(3) > div:nth-child(1) {
-    text-align: center;
-}
 
-/* Your Original Colors */
-.yellow { background: lightcoral; }
-.blue { background: gray; }
-.pink { background: pink; }
-.green { background: green; }
-.orange { background: orange; }
-.purple { background: purple; }
-.lightgreen { background: lightgreen; }
-.red { background: red; }
+
 
 /* Positioning Rules */
-.box:nth-child(1), .box:nth-child(2) { grid-row: 1; }
-.box:nth-child(3) { grid-row: 1 / span 3; height: 100%; }
-.box:nth-child(4), .box:nth-child(5) { grid-row: 1; }
-.box:nth-child(6), .box:nth-child(7) { grid-row: 2; }
-.box:nth-child(8), .box:nth-child(9) { grid-row: 2; }
-.box:nth-child(10), .box:nth-child(11) { grid-row: 3; }
-.box:nth-child(12), .box:nth-child(13) { grid-row: 3; }
-.box:nth-child(14) { grid-row: 4; grid-column: span 5; width: 100%; height: 100%; }
+.box:nth-child(1) { 
+    grid-row: 1 / span 3; 
+    background-image: url('../Images/cat_wall.jpg');
+
+
+
+}
+.box:nth-child(2) { grid-row: 1 / span 4; height: 100%; }
+.box:nth-child(3) { grid-row: 4;}
+
+.cat{
+    grid-area: 1/ 2/ 3/ 2;
+}
