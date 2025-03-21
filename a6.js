@@ -57,21 +57,22 @@ function checkAge() {
             // Assign an image based on the animal choice
             switch (animal) {
                 case "cat":
-                    imageSrc = "https://placekitten.com/300/200";
+                    imageSrc = "Images/cat.jpg";
                     break;
                 case "dog":
-                    imageSrc = "https://placedog.net/300/200";
+                    imageSrc = "Images/dog.jpg";
                     break;
                 case "frog":
-                    imageSrc = "https://upload.wikimedia.org/wikipedia/commons/3/3b/European_Green_Frog_cropped.jpg";
+                    imageSrc = "Images/frog.jpg";
                     break;
                 case "mouse":
-                    imageSrc = "https://upload.wikimedia.org/wikipedia/commons/b/b2/Mouse-white-background.jpg";
+                    imageSrc = "Images/mouse.jpg";
                     break;
                 default:
                     alert("Invalid choice. No image available.");
                     return;
             }
+            
 
             // Display the chosen image
             let imgElement = document.createElement("img");
@@ -79,6 +80,8 @@ function checkAge() {
             imgElement.alt = "Selected Animal";
             imgElement.style.width = "300px";
             imgElement.style.height = "200px";
+            imgElement.style.display = "block";
+            imgElement.style.margin = "20px auto";
             document.body.appendChild(imgElement);
             return;
         }
