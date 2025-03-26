@@ -1,78 +1,82 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px;
+    background-image: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: #333;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    row-gap: 10px;
-    column-gap: 20px;
-    height: 100vh;
-    width: 100%;
-    padding: 10px;
-    background-color: brown;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.box {
-    text-align: center;
+#app > p{
+    font-family: "Bodoni Moda SC", serif;
     font-weight: bold;
-    color: white;
-    padding: 10px; /* Adjusted padding to include top and bottom */
-    height: auto; /* Allow the box to grow based on content */
-    min-height: 40px; /* Minimum height to ensure consistency */
-    align-items: center;
-    border-radius: 5px;
-    overflow: hidden; /* Prevent overflow */
+    font-size: xx-large;
+    text-align: center;
+    font-optical-sizing: auto;
+    color: black;
+
 }
 
-.box img {
-    max-width: 100%; /* Ensure the image does not exceed the box width */
-    height: 90%; /* Maintain aspect ratio */
-    display: block; /* Ensures the image is centered properly */
-    margin: 0 auto; /* Centers the image horizontally */
-}
-
-.box p {
-    margin: 5px 0; /* Adds some space around paragraphs */
-    font-size: 14px; /* Adjust font size as needed */
-    color: inherit; /* Inherits the color from .box */
-}
-
-.box a {
-    color: inherit; /* Inherits the color from .box */
-    text-decoration: none; /* Removes underline from links */
-    font-weight: bold; /* Makes links bold */
-}
-
-.box a:hover {
-    text-decoration: underline; /* Adds underline on hover */
-}
-
-.grid-container > div:nth-child(3) > div:nth-child(1) {
+h2 {
+    font-family: 'Didot', 'Bodoni', 'Georgia', serif;
+    color: black;
+    margin-bottom: 0.3em;
+    text-decoration: underline;
     text-align: center;
 }
 
-/* Your Original Colors */
-.yellow { background: lightcoral; }
-.blue { background: gray; }
-.pink { background: pink; }
-.green { background: green; }
-.orange { background: orange; }
-.purple { background: purple; }
-.lightgreen { background: lightgreen; }
-.red { background: red; }
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
-/* Positioning Rules */
-.box:nth-child(1), .box:nth-child(2) { grid-row: 1; }
-.box:nth-child(3) { grid-row: 1 / span 3; height: 100%; }
-.box:nth-child(4), .box:nth-child(5) { grid-row: 1; }
-.box:nth-child(6), .box:nth-child(7) { grid-row: 2; }
-.box:nth-child(8), .box:nth-child(9) { grid-row: 2; }
-.box:nth-child(10), .box:nth-child(11) { grid-row: 3; }
-.box:nth-child(12), .box:nth-child(13) { grid-row: 3; }
-.box:nth-child(14) { grid-row: 4; grid-column: span 5; width: 100%; height: 100%; }
+
+
+article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+article img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 15px auto;
+    object-fit: cover;
+}
+
+article p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+button {
+    padding: 8px 14px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+input[type="button"] {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}

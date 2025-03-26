@@ -16,22 +16,26 @@ export class News {
     render() {
       // Create container
         const container = document.createElement("article");
-        container.style.border = "1px solid #ccc";
-        container.style.padding = "15px";
-        container.style.marginBottom = "20px";
+        
 
       // Title
         const title = document.createElement("h2");
         title.textContent = this.newsTitle;
+        title.style.alignItems ="center";
         this.titleElement = title;
+
+        // Like Stars
+        const likeStars = document.createElement("div");
+        likeStars.style.textAlign =  'center';
+        likeStars.style.fontWeight = "bold";
+        likeStars.innerHTML =  this.getStars();
+        this.likeDisplay = likeStars;
+        
 
       // Image
         const img = document.createElement("img");
         img.src = this.srcImg;
-        img.alt = "News Image";
-        img.style.width = "100%";
-        img.style.maxHeight = "200px";
-        img.style.objectFit = "cover";
+        img.alt = "News Image";;
         this.imageElement = img;
 
       // Text
@@ -39,28 +43,24 @@ export class News {
         paragraph.textContent = this.newsContent;
         this.textElement = paragraph;
 
-      // Like Stars
-        const likeStars = document.createElement("div");
-        likeStars.innerHTML = "Likes: " + this.getStars();
-        this.likeDisplay = likeStars;
+      
 
       // LIKE button
         const likeBtn = document.createElement("button");
         likeBtn.textContent = "LIKE";
-        likeBtn.onclick = () => this.incLikes(); // keep `this` reference
+        likeBtn.onclick = () => this.incLikes();
         this.likeButton = likeBtn;
 
       // HIDE button
         const hideBtn = document.createElement("button");
         hideBtn.textContent = "HIDE";
-        hideBtn.style.marginLeft = "10px";
         hideBtn.onclick = () => this.hide();
 
       // Append everything
         container.appendChild(title);
+        container.appendChild(likeStars);
         container.appendChild(img);
         container.appendChild(paragraph);
-        container.appendChild(likeStars);
         container.appendChild(likeBtn);
         container.appendChild(hideBtn);
 
@@ -68,7 +68,7 @@ export class News {
     }
 
     getStars() {
-        return "★".repeat(this.likes);
+        return "🌟".repeat(this.likes);
     }
 
     incLikes() {
@@ -89,6 +89,6 @@ export class News {
         if (!this.element) {
             this.render();
         }
-        
+        target.appendChild(this.element);
     }
 }

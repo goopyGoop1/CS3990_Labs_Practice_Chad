@@ -1,28 +1,22 @@
 
 export const arrRecourses = [
     {
-        srcImg: "../Imagescat.jpg",
-        newsTitle: 'Title 1',
-        newsContent: "Loremdnfdfj..........."
-    },
-
-    {
         srcImg: "../Images/cat.jpg",
-        newsTitle: 'Title 2',
-        newsContent: "Loremdnfdfj..........."
+        newsTitle: 'Local Hairless Cats Steal Hearts (and Blankets) in Small Town',
+        newsContent: "Maple Grove, AB: A peculiar group of pets is turning heads and warming laps in the quiet town of Maple Grove. Residents have recently become enamored with a growing number of hairless cats, also known as Sphynx cats, making appearances in homes, cafes, and even at the local library’s 'Paws & Pages' reading event. With their wrinkled skin, big ears, and curious personalities, these bald beauties have sparked both fascination and admiration. 'At first, I wasn’t sure what to think,' said Mary Dumont, a lifelong dog person. 'But after five minutes of cuddling with Pickles, I was smitten. He’s like a hot water bottle that purrs.' Veterinarians note that hairless cats require a bit more care than your average feline — including regular baths and plenty of warm places to curl up. But their playful and social nature makes them ideal companions. 'They’re always looking for a lap, a sunbeam, or someone to chat with,' said Dr. Lena Ford of the Maple Grove Animal Wellness Centre. Local breeder Jasper Mayfield reports a waiting list for Sphynx kittens that stretches into next year. 'People are starting to see that beauty comes in all forms — even wrinkly and whiskerless,' he laughed. Whether snuggled in sweaters or basking in windows, it seems these quirky cats have found a warm place not just in homes, but in hearts across Maple Grove."
     },
 
     {
-        srcImg: "../Images/cat.jpg",
-        newsTitle: 'Title 3',
-        newsContent: "Loremdnfdfj..........."
+        srcImg: "../Images/flyingBaby.jpg",
+        newsTitle: 'Sky High Surprise: Flying Baby Spotted Riding Delta Jet Over Midwest',
+        newsContent: "Des Moines, IA: Air traffic controllers and stunned passengers reported an unusual sight in the skies above Iowa this morning — a baby, casually straddling the fuselage of a Delta Airlines jet at 30,000 feet. Photos and videos quickly flooded social media as the internet tried to make sense of the airborne toddler. The child, dressed in a sleeveless shirt and denim shorts, appeared calm — even pointing dramatically as the plane cruised past clouds. Aviation experts are baffled. 'We've never seen anything like it,' said FAA spokesperson Linda Wells. 'He wasn’t wearing any protective gear, yet there he was, balanced perfectly on the Boeing 767 like it was a rocking horse.' Delta Airlines has issued a statement saying they are 'investigating the situation' and confirmed that none of their passengers were reported missing mid-flight. Speculation ranges from a secret government anti-gravity program to the baby being a lost Avenger. Witnesses on the ground described the moment as 'majestic and mildly concerning.' One local farmer claimed the child waved at his cows. The FAA has issued a 'sky baby watch' alert and encourages pilots to remain vigilant for tiny, joyriding humans. No injuries were reported. The baby has not yet been identified."
     },
 
     {
-        srcImg: "../Imagescat.jpg",
-        newsTitle: 'Title 4',
-        newsContent: "Loremdnfdfj..........."
-    },
+        srcImg: "../Images/beaver.gif",
+        newsTitle: 'Sticky Situation: Beaver Caught Red-Pawed Stealing Maple Syrup from Local Cabin',
+        newsContent: "Muskoka, ON: In what residents are calling a 'very Canadian crime,' a clever beaver has been caught on camera sneaking into a lakeside cabin and making off with several bottles of locally tapped maple syrup. The incident occurred early Tuesday morning when homeowner Brian McAllister returned from a fishing trip to find syrup trails across his dock and a gnawed-open cupboard door. 'At first, I thought maybe a raccoon had gotten in,' McAllister told reporters. 'But then I checked the security footage… and there he was. A full-grown beaver waddling off with a bottle of syrup in his little paws like it was the most normal thing in the world.' Footage shows the beaver — now affectionately dubbed 'Sappy' by locals — dragging a 500ml glass bottle across the deck before disappearing into the forest. Wildlife experts say while it’s unusual, it’s not impossible. 'Beavers don’t usually go for human food,' said Dr. Janice Fortier of the Ontario Wildlife Federation. 'But the smell of syrup is strong. If it was sweet enough and left out in the open, curiosity could absolutely take over.' Residents in the area are now securing their breakfast supplies. Meanwhile, one local bakery has already launched a new donut called The Bandit Beaver — filled with maple cream and topped with chocolate teeth marks. Authorities say Sappy is not considered dangerous, just a little too Canadian for his own good."
+    }
 
 
 ]
