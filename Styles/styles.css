@@ -15,13 +15,13 @@ body {
 
 }
 
-h2 {
+/* h2 {
     font-family: 'Didot', 'Bodoni', 'Georgia', serif;
     color: black;
     margin-bottom: 0.3em;
     text-decoration: underline;
     text-align: center;
-}
+} */
 
 #content {
     display: flex;
@@ -31,15 +31,15 @@ h2 {
 
 
 
-article {
+/* article {
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-}
+} */
 
-article img {
+/* article img {
     width: 100%;
     max-width: 400px;
     border-radius: 8px;
@@ -52,9 +52,9 @@ article p {
     line-height: 1.6;
     margin-bottom: 15px;
     font-family:'Courier New', Courier, monospace;
-}
+} */
 
-button {
+/* button {
     padding: 8px 14px;
     margin-right: 10px;
     border: none;
@@ -68,7 +68,7 @@ button {
 
 button:hover {
     background-color: #0056b3;
-}
+} */
 
 button:disabled {
     background-color: #999;

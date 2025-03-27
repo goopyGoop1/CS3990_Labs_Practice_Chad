@@ -34,9 +34,16 @@ export class NewNews{
         title.style.textDecoration = "underline";
         title.style.textAlign = "center"; 
         title.textContent = this.newsTitle;
-        this.titleElement = title; 
+        this.titleElement = title;
+        
+        // Like Stars
+        const likeStars = document.createElement("div");
+        likeStars.style.textAlign =  'center';
+        likeStars.style.fontWeight = "bold";
+        likeStars.innerHTML =  this.getStars();
+        this.likeDisplay = likeStars;
 
-
+        // Image
         const img = document.createElement('img')
         img.src = this.srcImg;
         img.alt = "News Image";
@@ -48,6 +55,8 @@ export class NewNews{
         img.style.objectFit = "cover";
         this.imageElement = img;
 
+        
+        //text
         const text = document.createElement("p");
         text.style.lineHeight = "1.6";
         text.style.marginBottom = "15px";
@@ -55,10 +64,53 @@ export class NewNews{
         text.textContent = this.newsContent; 
         this.textElement  = text;
 
-
-
+        const likeBtn = document.createElement('button');
+        likeBtn.textContent = "LIKE";
+        likeBtn.style.padding = "8px 14px";
+        likeBtn.style.marginRight =  "10px";
+        likeBtn.style.border = "none";
+        likeBtn.style.borderRadius =  "6px";
+        likeBtn.style.cursor = "pointer";
+        likeBtn.style.fontWeight =  "bold";
+        likeBtn.style.backgroundColor = " #007BFF";
+        likeBtn.style.color =  "white";
+        likeBtn.style.transition =  "background-color 0.2s ease";
+        likeBtn.onclick = () => this.incLikes();
         
+        likeBtn.onmouseover = () =>{
+            likeBtn.style.backgroundColor = " #0056b3";
+        };
 
+
+        this.likeButton = likeBtn;
+
+
+        const hideBtn = document.createElement('button');
+        hideBtn.textContent = "HIDE";
+        hideBtn.style.padding = "8px 14px";
+        hideBtn.style.marginRight =  "10px";
+        hideBtn.style.border = "none";
+        hideBtn.style.borderRadius =  "6px";
+        hideBtn.style.cursor = "pointer";
+        hideBtn.style.fontWeight =  "bold";
+        hideBtn.style.backgroundColor = " #007BFF";
+        hideBtn.style.color =  "white";
+        hideBtn.style.transition =  "background-color 0.2s ease";
+        hideBtn.onclick = () => this.hide();
+        
+        hideBtn.onmouseover = () =>{
+            hideBtn.style.backgroundColor = " #0056b3";
+        };
+
+
+        article.appendChild(title);
+        article.appendChild(likeStars);
+        article.appendChild(img);
+        article.appendChild(paragraph);
+        article.appendChild(likeBtn);
+        article.appendChild(hideBtn);
+
+        this.element = article;
 
     }
 
@@ -67,19 +119,29 @@ export class NewNews{
         return "🌟".repeat(this.likes);
     }
 
+    incLikes() {
+        this.likes++;
+        this.likeDisplay.innerHTML = "Likes: " + this.getStars();
+    }
 
+    hide() {
+        this.imageElement.style.opacity = "0.3";
+        this.titleElement.style.color = "darkgray";
+        this.titleElement.style.backgroundColor = "#e0e0e0";
+        this.textElement.style.color = "darkgray";
+        this.textElement.style.backgroundColor = "#e0e0e0";
+        this.likeButton.disabled = true;
+    }
 
-
-
-
-
-
-
-
-
-
-            
+    show(target) {
+        if (!this.element) {
+            this.render();
         }
+        target.appendChild(this.element);
+    }
+
+
+}
 
 
 
