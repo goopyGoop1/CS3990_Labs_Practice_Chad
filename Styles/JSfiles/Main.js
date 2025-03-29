@@ -15,4 +15,4 @@ setTimeout(() => {
     );
 
     fancyButton.show();
-}, colorButtons.length * 300);
+}, colorButtons.length * 3000);

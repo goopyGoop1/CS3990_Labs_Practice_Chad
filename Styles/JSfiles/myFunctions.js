@@ -20,7 +20,7 @@ export function displayButtonsWithDelay(arrButtons) {
     arrButtons.forEach((button, index) => {
         setTimeout(() => {
             button.show();
-        }, index * 300); // 30 seconds delay per button
+        }, index * 300); 
     });
 }
 

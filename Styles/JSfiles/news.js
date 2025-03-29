@@ -1,5 +1,5 @@
 export class News {
-  constructor(srcImg, newsTitle, newsContent) {
+    constructor(srcImg, newsTitle, newsContent) {
     this.srcImg = srcImg;
     this.newsTitle = newsTitle;
     this.newsContent = newsContent;
@@ -121,7 +121,7 @@ render() {
 
 
 getStars() {
-    return "🌟".repeat(this.likes);
+    return "🌝".repeat(this.likes);
 }
 
 incLikes() {

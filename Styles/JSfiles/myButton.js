@@ -10,7 +10,7 @@ export default class Button {
             `<button title="${this.btnTitle}" style="background-color:${this.btnBgColor}; padding: 10px; border: none; color: white; margin-right: 10px;">${this.btnText}</button>`
         );
     }
-      
+
 
 }
 
