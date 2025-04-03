@@ -1,3 +1,6 @@
+
+
+
 export class News {
     constructor(srcImg, newsTitle, newsContent) {
     this.srcImg = srcImg;
