@@ -1,5 +1,6 @@
-/*  TASK 1
-#app {
+ /* TASK 1 */
+
+/* #app {
     background-color: #e0a3a3;
     padding: 20px;
     border-radius: 10px;
@@ -94,9 +95,9 @@
 
 
 
-/* TASK 2
+/* TASK 2 */
 
-body {
+/* body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #fff;
     padding: 30px;
@@ -143,7 +144,9 @@ body {
 
 
 
-/* TASK 3 #menu-container {
+/* TASK 3  */
+
+/* #menu-container {
     width: 250px;
     border: 2px solid #555;
     border-radius: 8px;
@@ -158,6 +161,14 @@ body {
     padding: 10px;
     cursor: pointer;
     border-radius: 6px 6px 0 0;
+}
+
+#menu-title::before{
+    content: "🍬";
+}
+
+#menu-title::before:target{
+    content: "🍭";
 }
 
 #menu-list {
@@ -189,9 +200,12 @@ body {
 
 
 
-body {
+/* TASK 4 */
+
+/* body {
     font-family: Arial, sans-serif;
     padding: 20px;
+    
 }
 
 .color-buttons {
@@ -216,10 +230,11 @@ body {
 .fruit-list li {
     padding: 10px;
     margin-bottom: 8px;
-    color: white;
+    color: black;
     font-size: 18px;
     font-family: 'Segoe UI Emoji', sans-serif;
     border-radius: 5px;
+    list-style: none;
 }
 
 .highlight {
@@ -238,5 +253,51 @@ body {
 }
 
 .star.active {
-    color: orange;
-}
+    color: #40fd00 ;
+} */
+
+
+/* Eaxm Prep */
+
+#hoverBox {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    margin: 10px 0;
+  }
+
+  #slidePanel {
+    width: 300px;
+    background: #f2f2f2;
+    padding: 10px;
+    display: none;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  td, th {
+    border: 1px solid #333;
+    padding: 5px;
+  }
+
+
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  #addItemsBtn2 {
+    margin-bottom: 10px;
+  }
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  p{
+    color: black;
+  }
+

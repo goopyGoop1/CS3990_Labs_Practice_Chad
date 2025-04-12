@@ -1,16 +1,16 @@
-// Define a class called NumberGenerator
+// define a class called numbergenerator
 class NumberGenerator {
-    
-    // Constructor is called when a new instance is created
+
+    // constructor runs when a new object is created from the class
     constructor(containerId) {
-        this.value = 0; // Initialize the value to 0
-        this.container = document.getElementById(containerId); // Get the container element by its ID
-        this.render(); // Call render method to set up the UI
+        this.value = 0; // start with value set to 0
+        this.container = document.getElementById(containerId); // get the html element where the component will be placed
+        this.render(); // call the method that creates the html and sets up events
     }
 
-    // Method to create and display the component UI
+    // method to build the user interface
     render() {
-        // Inject HTML content inside the container
+        // set the inner html of the container with buttons and display
         this.container.innerHTML = `
             <div class="number-generator">
                 <button id="generateBtn">Generate</button>
@@ -21,69 +21,70 @@ class NumberGenerator {
             <div class="news-container" id="newsBlock"></div>
         `;
 
-        // Add click event to "Generate" button: sets value to a random number between 0 and 100
+        // when the "generate" button is clicked, generate a random number from 0 to 100
         document.getElementById('generateBtn').addEventListener('click', () => {
-            this.value = Math.floor(Math.random() * 101);
-            this.updateUI(); // Update the display and news items
+            this.value = Math.floor(Math.random() * 101); // generate random integer
+            this.updateUI(); // update the number display and news list
         });
 
-        // Add click event to "More" button: increments value (max 100)
+        // when the "more" button is clicked, increase value by 1 (maximum 100)
         document.getElementById('greaterBtn').addEventListener('click', () => {
             if (this.value < 100) {
-                this.value++;
-                this.updateUI(); // Update UI after increment
+                this.value++; // increment value
+                this.updateUI(); // update the ui
             }
         });
 
-        // Add click event to "Less" button: decrements value (min 0)
+        // when the "less" button is clicked, decrease value by 1 (minimum 0)
         document.getElementById('lessBtn').addEventListener('click', () => {
             if (this.value > 0) {
-                this.value--;
-                this.updateUI(); // Update UI after decrement
+                this.value--; // decrement value
+                this.updateUI(); // update the ui
             }
         });
 
-        // Add event delegation to the news block: handle remove button clicks
+        // event delegation for clicking the "remove" buttons inside news items
         document.getElementById('newsBlock').addEventListener('click', (e) => {
-            // If a clicked element has the "remove-btn" class
+            // check if the clicked element is a "remove-btn"
             if (e.target && e.target.classList.contains('remove-btn')) {
-                e.target.parentElement.remove(); // Remove the parent news item div
+                e.target.parentElement.remove(); // remove the whole news item
             }
         });
 
-        // Populate initial news items (zero at this point)
+        // generate the initial news list based on value
         this.updateNews();
     }
 
-    // Method to update the number display and regenerate the news items
+    // update the displayed number and rebuild the news list
     updateUI() {
-        document.getElementById('numberDisplay').textContent = this.value; // Update number on screen
-        this.updateNews(); // Rebuild the news items list
+        document.getElementById('numberDisplay').textContent = this.value; // update the text display of the number
+        this.updateNews(); // refresh the news items to match the current number
     }
 
-    // Method to populate the news block based on the current value
+    // create the list of news items based on the current value
     updateNews() {
-        const newsBlock = document.getElementById('newsBlock'); // Get the news block container
-        newsBlock.innerHTML = ''; // Clear previous content
+        const newsBlock = document.getElementById('newsBlock'); // get the container for news items
+        newsBlock.innerHTML = ''; // clear out any old news items
 
-        // Loop from 0 to current value - 1
+        // loop as many times as the current value to create news items
         for (let i = 0; i < this.value; i++) {
-            const item = document.createElement('div'); // Create a new div for a news item
-            item.className = 'news-item'; // Assign class
+            const item = document.createElement('div'); // create a new div for a news item
+            item.className = 'news-item'; // apply a css class to the news item
 
-            // Set inner HTML of news item with title, text, and remove button
+            // set the inner content with a title, a paragraph, and a remove button
             item.innerHTML = `
                 <h3 class="news-title">Title #${i + 1}</h3>
                 <p class="text">Lorem</p>
                 <button class="remove-btn">Remove</button>
             `;
 
-            newsBlock.appendChild(item); // Add the news item to the news block
+            // add the news item to the news container
+            newsBlock.appendChild(item);
         }
     }
 }
 
-// When the document is fully loaded, create a new NumberGenerator in the 'app' container
+// once the web page is fully loaded, create and run the numbergenerator
 document.addEventListener('DOMContentLoaded', () => {
-    new NumberGenerator('app');
+    new NumberGenerator('app'); // initialize the component inside the element with id "app"
 });
