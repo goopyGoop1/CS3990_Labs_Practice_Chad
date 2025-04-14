@@ -94,61 +94,71 @@ $.each(easterShop, function (index, item) {
 
 $("li:first-child").hover(function () { 
     $(".item:first-child").css("boxShadow", "0 0 10px red");
-
+    $(this).css("backgroundColor", "yellow");
 }
 , function () {
     $(".item:first-child").css("boxShadow", "none");
+    $(this).css("backgroundColor", "lightpink");
 });
 
 
 $("li:nth-child(2)").hover(function () {
     $(".item:nth-child(2)").css("boxShadow", "0 0 10px red");
-
+    $(this).css("backgroundColor", "yellow");
 }   , function () {
     $(".item:nth-child(2)").css("boxShadow", "none");
+    $(this).css("backgroundColor", "lightpink");
 });
 
 $("li:nth-child(3)").hover(function () {
     $(".item:nth-child(3)").css("boxShadow", "0 0 10px red");
-
+    $(this).css("backgroundColor", "yellow");
 }, function () {    
     $(".item:nth-child(3)").css("boxShadow", "none");
+    $(this).css("backgroundColor", "lightpink");
 });      
 
 $("li:nth-child(4)").hover(function () {
     $(".item:nth-child(4)").css("boxShadow", "0 0 10px red");
-
+    $(this).css("backgroundColor", "yellow");
 }, function () {
     $(".item:nth-child(4)").css("boxShadow", "none");
+    $(this).css("backgroundColor", "lightpink");
 });
 
 $(".item:first-child").click(function () { 
     const data = easterShop[0].description;
+    $("#itemDescr").empty(); // remove this if you want to keep adding
     $("#itemDescr").append("<p>" + data + "</p>");
-    $("#itemDescr").css("display", "block");
+
 
     
 });
 
 $(".item:nth-child(2)").click(function () {
     const data = easterShop[1].description;
+    $("#itemDescr").empty();
     $("#itemDescr").append("<p>" + data + "</p>");
-    $("#itemDescr").css("display", "block");
+
+
+        
 
     
 });
 $(".item:nth-child(3)").click(function () {
     const data = easterShop[2].description;
+    $("#itemDescr").empty();
     $("#itemDescr").append("<p>" + data + "</p>");
-    $("#itemDescr").css("display", "block");
+  
 
     
 });
 
 $(".item:nth-child(4)").click(function () { 
     const data = easterShop[3].description;
+    $("#itemDescr").empty();
     $("#itemDescr").append("<p>" + data + "</p>");
-    $("#itemDescr").css("display", "block");
+
 
     
 });

@@ -428,6 +428,7 @@ h2 {
 
 
 ul li{
+    background-color: lightpink;
     list-style: "🐰";
     padding: 5px;
     margin: 5px 0;
@@ -468,5 +469,5 @@ ul li{
     color: #555;
     text-align: left;
     font-weight: bold;
-    
+
 }
