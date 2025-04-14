@@ -307,7 +307,7 @@
 
 /* Exam Prep 2 */
 
-#flashcardDeck {
+/* #flashcardDeck {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 15px;
@@ -349,7 +349,7 @@
 
 .flashcard.flipped .back {
     transform: rotateY(0deg);
-}
+} */
 
 /* .emoji.active {
     background-color: #e0f7ff;
@@ -419,3 +419,54 @@ h2 {
     text-align: center;
 }
    */
+
+
+#itemsGroups{
+    background-color: palevioletred;
+    width: 25%;
+}
+
+
+ul li{
+    list-style: "🐰";
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#itemGallery{
+    background-color: plum;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+.item{
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.item img{
+    max-width: 50%;
+    height: auto;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.item h3{
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+.item p{
+    font-size: 0.9rem;
+    color: #555;
+    text-align: left;
+    font-weight: bold;
+    
+}
