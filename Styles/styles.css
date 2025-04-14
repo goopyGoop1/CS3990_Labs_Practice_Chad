@@ -356,3 +356,66 @@
     font-weight: bold;
     border-radius: 6px;
 } */
+
+/* Grids */
+
+/* body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+h2 {
+    margin-top: 40px;
+    color: #333;
+  } */
+
+  /* 🌐 1. Basic 3x3 Grid */
+/* .grid-basic {
+    display: grid;
+    grid-template-columns: [left] 1fr [center] 1fr [right] 1fr;
+    grid-template-rows: [top] auto [middle] auto [bottom] auto;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.grid-basic > div {
+    background-color: #eef;
+    border: 1px solid #99c;
+    padding: 15px;
+    text-align: center;
+  } */
+
+  /* 📐 2. Header / Main / Sidebar / Footer Layout */
+/* .grid-layout {
+    display: grid;
+    grid-template-columns: [start] 1fr [main] 3fr [end];
+    grid-template-rows: [header] auto [content] 1fr [footer] auto;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+  .grid-layout > * {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 15px;
+  } */
+
+  /* 🧩 3. Grid with Named Areas */
+/* .grid-areas {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+    "header header header"
+    "left main right"
+    "footer footer footer";
+    gap: 10px;
+}
+
+.grid-areas > div {
+    background-color: #f0fff0;
+    border: 1px solid #8f8;
+    padding: 15px;
+    text-align: center;
+}
+   */

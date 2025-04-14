@@ -1,132 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Example 1 for HTML & CSS module" />
-    <meta name="author" content="Chad" />
-
-    <title>About Chad Smith</title>
-    <link rel="icon" href="Favicons/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" href="Favicons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/svg+xml" href="Favicons/favicon.svg">
-    <link rel="apple-touch-icon" href="Favicons/apple-touch-icon.png">
-    <link rel="manifest" href="Favicons/site.webmanifest">
-    <meta name="theme-color" content="#fffff">
-
-    <link rel="stylesheet" href="Styles\styles.css" />
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Grid Templates</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <a id="top"></a>
+  <!-- 🌐 Grid Example 1: Basic 3x3 Grid -->
+  <h2>1. Basic 3x3 Grid (Named Lines)</h2>
+  <div class="grid-basic">
+    <div>Top Left</div>
+    <div>Top Center</div>
+    <div>Top Right</div>
+    <div>Middle Left</div>
+    <div>Middle Center</div>
+    <div>Middle Right</div>
+    <div>Bottom Left</div>
+    <div>Bottom Center</div>
+    <div>Bottom Right</div>
+</div>
 
-    <ul class="button-list">
-        <li><a class="bottom-button" href="#bottom">Bottom</a></li>
-    </ul>
-    
-    <header>
-        <h1>About Chad Smith</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="indexp3.html#hobbies" class="button">Go to Hobbies</a>
-            <a href="indexp4.html" class="button">CSS Transformations&Transitions </a>
-        </nav>
-    </header>
-    <h2 class="h2-p2">Additional Education text</h2>
-    <img class="img-two" src="Images/continuing_ed.jpg" alt="Continuing Education" width="150" height="150" style="float:none; margin-left:15px;"> 
-<ul class="bullet-list">
-    <li><strong>Introduction to Data Science</strong></li>
-    <li><strong>Machine Learning</strong></li>
-    <li class="spec_item"><strong>Web Development Bootcamp</strong></li>
-    <li><strong>Cloud Fundamentals Certification</strong></li>
-    <li><strong>Financial Modeling & Valuation Analyst (FMVA®)</strong></li>
-</ul>
+<!-- 📐 Grid Example 2: Header / Sidebar / Main / Footer -->
+<h2>2. Layout Grid (Named Lines)</h2>
+<div class="grid-layout">
+    <header style="grid-column: start / end; grid-row: header;">Header</header>
+    <aside style="grid-column: start / main; grid-row: content;">Sidebar</aside>
+    <main style="grid-column: main / end; grid-row: content;">Main Content</main>
+    <footer style="grid-column: start / end; grid-row: footer;">Footer</footer>
+</div>
 
-<h2 style="text-align: center;">Work and Career of My Dreams</h2>
-<p class="paragraph-three">
-    The following list highlights professions that inspire me, 
-    offering a glimpse into the innovative and impactful roles 
-    that align with my interests and aspirations. Each of these careers 
-    reflects a unique blend of creativity, technical expertise, and the 
-    potential to solve real-world challenges. These professions not only 
-    provide avenues for personal growth but also present opportunities to 
-    contribute meaningfully to industries that drive global progress.
-</p>
-<p class="paragraph-three">
-    At the heart of these roles is a focus on technology and innovation. 
-    Whether it's designing cutting-edge software solutions, engineering 
-    sustainable energy systems, or developing advancements in artificial intelligence, 
-    these careers embody the intersection of curiosity and problem-solving. 
-    The dynamic nature of these professions ensures a constantly evolving landscape, 
-    where adaptability and a commitment to lifelong learning are essential for success. 
-    Such roles resonate with my passion for leveraging technology to make a tangible 
-    difference in the world.
-</p>
+<!-- 🧩 Grid Example 3: Named Grid Areas -->
+<h2>3. Grid with Named Areas</h2>
+<div class="grid-areas">
+    <div style="grid-area: header;">Header</div>
+    <div style="grid-area: left;">Sidebar Left</div>
+    <div style="grid-area: main;">Main</div>
+    <div style="grid-area: right;">Sidebar Right</div>
+    <div style="grid-area: footer;">Footer</div>
+</div>
 
-<p class="paragraph-three">
-    Moreover, these professions are championed by forward-thinking companies 
-    that value innovation, collaboration, and impact. Through partnerships with 
-    leading organizations in the tech, energy, and sustainability sectors, these 
-    careers provide access to inspiring projects and a supportive environment for growth. 
-    Exploring these opportunities motivates me to pursue roles that challenge the status quo, 
-    encourage creative thinking, and help shape a brighter future.
-</p>
-<img class="img-one-p2" src="Images/dream_job.jpg" alt="Dream Job" > 
-<h3 class="h3-p2">Dream Professions</h3>
-<ol class="custom-ordered-list">
-    <li>
-        <strong>Software Engineer</strong><br>
-        A professional who designs, develops, and maintains software applications. This role combines creativity, logic, and technical skills to create software solutions that meet users' needs.
-    </li>
-    <li>
-        <strong>Data Scientist</strong><br>
-        A role focused on analyzing and interpreting complex data to help organizations make informed decisions. It requires strong analytical skills and knowledge of programming languages like Python and R.
-    </li>
-    <li>
-        <strong>AI/ML Specialist</strong><br>
-        An expert in artificial intelligence and machine learning who develops models and algorithms to solve complex problems and automate processes.
-    </li>
-    <li>
-        <strong>Cloud Architect</strong><br>
-        A professional responsible for designing and managing cloud computing systems for businesses. This role involves advanced knowledge of cloud platforms like AWS, Azure, or Google Cloud.
-    </li>
-</ol>
-
-<h3 class="h3-p2">Companies of Interest</h3>
-
-<a href="https://openai.com" target="_blank" title="OpenAI.com">
-    <img class="img-three float-left" src="Images/open_ai.jpg" alt="Open AI & Microsoft Logo">
-</a>
-<a href="https://www.google.com" target="_blank" title="Google.com">
-    <img class="img-two float-left" src="Images/google_logo.jpg" alt="Google Logo">
-</a>
-<a href="https://www.microsoft.com" target="_blank" title="microsoft.com">
-    <img class="img-one float-left" src="Images/microsoft_logo.jpg" alt="Microsoft Logo">
-</a>
-<a href="https://aws.amazon.com" target="_blank" title="aws.com">
-    <img class="img-four float-left" src="Images/aws_logo.jpg" alt="Amazon Web Service Logo">
-</a>
-
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<a id="bottom"></a>
-
-    <ul class="button-list clear-float">
-        <li><a class="top-button" href="#top">Top</a></li>
-    </ul>
-    <footer>
-        <p>© 2025 Chad Smith. All rights reserved.</p>
-    </footer>
 </body>
 </html>
